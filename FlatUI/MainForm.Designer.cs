@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.FileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.AddNewProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +49,7 @@
             this.AnalyzingPatternSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.AppSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RegistExtensionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.拡張機能設定XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MoveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PreviousResultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -90,7 +91,6 @@
             this.SaveExportedLogFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.ProgressTimer = new System.Windows.Forms.Timer(this.components);
             this.PrintLogDialog = new System.Windows.Forms.PrintDialog();
-            this.RegistExtensionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogDataGridView)).BeginInit();
@@ -100,6 +100,7 @@
             // 
             // menuStrip
             // 
+            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileMenu,
             this.SettingsMenu,
@@ -108,14 +109,12 @@
             this.FilteringToolStripMenuItem,
             this.ToolsMenu,
             this.helpMenu});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1010, 26);
-            this.menuStrip.TabIndex = 0;
-            this.menuStrip.Text = "MenuStrip";
+            this.toolTip.SetToolTip(this.menuStrip, resources.GetString("menuStrip.ToolTip"));
             // 
             // FileMenu
             // 
+            resources.ApplyResources(this.FileMenu, "FileMenu");
             this.FileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AddNewProjectToolStripMenuItem,
             this.OpenProjectToolStripMenuItem,
@@ -128,98 +127,74 @@
             this.PrintLogToolStripMenuItem,
             this.toolStripSeparator5,
             this.ExitToolStripMenuItem});
-            this.FileMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
             this.FileMenu.Name = "FileMenu";
-            this.FileMenu.Size = new System.Drawing.Size(85, 22);
-            this.FileMenu.Text = "ファイル(&F)";
             // 
             // AddNewProjectToolStripMenuItem
             // 
-            this.AddNewProjectToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("AddNewProjectToolStripMenuItem.Image")));
+            resources.ApplyResources(this.AddNewProjectToolStripMenuItem, "AddNewProjectToolStripMenuItem");
             this.AddNewProjectToolStripMenuItem.Name = "AddNewProjectToolStripMenuItem";
-            this.AddNewProjectToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.AddNewProjectToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
-            this.AddNewProjectToolStripMenuItem.Text = "プロジェクトの新規作成(&N)";
             this.AddNewProjectToolStripMenuItem.Click += new System.EventHandler(this.AddNewProjectToolStripMenuItem_Click);
             // 
             // OpenProjectToolStripMenuItem
             // 
-            this.OpenProjectToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("OpenProjectToolStripMenuItem.Image")));
+            resources.ApplyResources(this.OpenProjectToolStripMenuItem, "OpenProjectToolStripMenuItem");
             this.OpenProjectToolStripMenuItem.Name = "OpenProjectToolStripMenuItem";
-            this.OpenProjectToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.OpenProjectToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
-            this.OpenProjectToolStripMenuItem.Text = "プロジェクトを開く(&O)";
             this.OpenProjectToolStripMenuItem.Click += new System.EventHandler(this.OpenProjectToolStripMenuItem_Click);
             // 
             // SaveProjectToolStripMenuItem
             // 
-            this.SaveProjectToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SaveProjectToolStripMenuItem.Image")));
+            resources.ApplyResources(this.SaveProjectToolStripMenuItem, "SaveProjectToolStripMenuItem");
             this.SaveProjectToolStripMenuItem.Name = "SaveProjectToolStripMenuItem";
-            this.SaveProjectToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.SaveProjectToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
-            this.SaveProjectToolStripMenuItem.Text = "プロジェクトの保存(&S)";
             this.SaveProjectToolStripMenuItem.Click += new System.EventHandler(this.SaveProjectToolStripMenuItem_Click);
             // 
             // SaveAsProjectToolStripMenuItem
             // 
+            resources.ApplyResources(this.SaveAsProjectToolStripMenuItem, "SaveAsProjectToolStripMenuItem");
             this.SaveAsProjectToolStripMenuItem.Name = "SaveAsProjectToolStripMenuItem";
-            this.SaveAsProjectToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
-            this.SaveAsProjectToolStripMenuItem.Text = "名前を付けてプロジェクトを保存(&A)";
             this.SaveAsProjectToolStripMenuItem.Click += new System.EventHandler(this.SaveAsProjectToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
+            resources.ApplyResources(this.toolStripSeparator7, "toolStripSeparator7");
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(272, 6);
             // 
             // ImportLogToolStripMenuItem
             // 
-            this.ImportLogToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ImportLogToolStripMenuItem.Image")));
+            resources.ApplyResources(this.ImportLogToolStripMenuItem, "ImportLogToolStripMenuItem");
             this.ImportLogToolStripMenuItem.Name = "ImportLogToolStripMenuItem";
-            this.ImportLogToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.ImportLogToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
-            this.ImportLogToolStripMenuItem.Text = "ログをインポート(&I)";
             this.ImportLogToolStripMenuItem.Click += new System.EventHandler(this.ImportLogToolStripMenuItem_Click);
             // 
             // ExportLogToolStripMenuItem
             // 
-            this.ExportLogToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ExportLogToolStripMenuItem.Image")));
+            resources.ApplyResources(this.ExportLogToolStripMenuItem, "ExportLogToolStripMenuItem");
             this.ExportLogToolStripMenuItem.Name = "ExportLogToolStripMenuItem";
-            this.ExportLogToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.ExportLogToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
-            this.ExportLogToolStripMenuItem.Text = "ログをエクスポート(&E)";
             this.ExportLogToolStripMenuItem.Click += new System.EventHandler(this.ExportLogToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
+            resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(272, 6);
             // 
             // PrintLogToolStripMenuItem
             // 
-            this.PrintLogToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("PrintLogToolStripMenuItem.Image")));
-            this.PrintLogToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.PrintLogToolStripMenuItem, "PrintLogToolStripMenuItem");
             this.PrintLogToolStripMenuItem.Name = "PrintLogToolStripMenuItem";
-            this.PrintLogToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.PrintLogToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
-            this.PrintLogToolStripMenuItem.Text = "印刷(&P)";
             this.PrintLogToolStripMenuItem.Click += new System.EventHandler(this.PrintLogToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
+            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(272, 6);
             // 
             // ExitToolStripMenuItem
             // 
-            this.ExitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ExitToolStripMenuItem.Image")));
+            resources.ApplyResources(this.ExitToolStripMenuItem, "ExitToolStripMenuItem");
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
-            this.ExitToolStripMenuItem.Text = "アプリケーションの終了(&X)";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
             // 
             // SettingsMenu
             // 
+            resources.ApplyResources(this.SettingsMenu, "SettingsMenu");
             this.SettingsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ViewColumnSettingToolStripMenuItem,
             this.AnalyzingPatternSettingToolStripMenuItem,
@@ -228,48 +203,44 @@
             this.RegistExtensionToolStripMenuItem,
             this.拡張機能設定XToolStripMenuItem});
             this.SettingsMenu.Name = "SettingsMenu";
-            this.SettingsMenu.Size = new System.Drawing.Size(63, 22);
-            this.SettingsMenu.Text = "設定(&N)";
             // 
             // ViewColumnSettingToolStripMenuItem
             // 
-            this.ViewColumnSettingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ViewColumnSettingToolStripMenuItem.Image")));
+            resources.ApplyResources(this.ViewColumnSettingToolStripMenuItem, "ViewColumnSettingToolStripMenuItem");
             this.ViewColumnSettingToolStripMenuItem.Name = "ViewColumnSettingToolStripMenuItem";
-            this.ViewColumnSettingToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
-            this.ViewColumnSettingToolStripMenuItem.Text = "表示カラム設定(&C)";
             this.ViewColumnSettingToolStripMenuItem.Click += new System.EventHandler(this.ViewColumnSettingToolStripMenuItem_Click);
             // 
             // AnalyzingPatternSettingToolStripMenuItem
             // 
-            this.AnalyzingPatternSettingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("AnalyzingPatternSettingToolStripMenuItem.Image")));
+            resources.ApplyResources(this.AnalyzingPatternSettingToolStripMenuItem, "AnalyzingPatternSettingToolStripMenuItem");
             this.AnalyzingPatternSettingToolStripMenuItem.Name = "AnalyzingPatternSettingToolStripMenuItem";
-            this.AnalyzingPatternSettingToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
-            this.AnalyzingPatternSettingToolStripMenuItem.Text = "解析パターン設定(&P)";
             this.AnalyzingPatternSettingToolStripMenuItem.Click += new System.EventHandler(this.AnalyzingSettingToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(227, 6);
             // 
             // AppSettingToolStripMenuItem
             // 
-            this.AppSettingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("AppSettingToolStripMenuItem.Image")));
+            resources.ApplyResources(this.AppSettingToolStripMenuItem, "AppSettingToolStripMenuItem");
             this.AppSettingToolStripMenuItem.Name = "AppSettingToolStripMenuItem";
-            this.AppSettingToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
-            this.AppSettingToolStripMenuItem.Text = "アプリケーション設定(&A)";
             this.AppSettingToolStripMenuItem.Click += new System.EventHandler(this.AppSettingToolStripMenuItem_Click);
+            // 
+            // RegistExtensionToolStripMenuItem
+            // 
+            resources.ApplyResources(this.RegistExtensionToolStripMenuItem, "RegistExtensionToolStripMenuItem");
+            this.RegistExtensionToolStripMenuItem.Name = "RegistExtensionToolStripMenuItem";
+            this.RegistExtensionToolStripMenuItem.Click += new System.EventHandler(this.RegistExtensionToolStripMenuItem_Click);
             // 
             // 拡張機能設定XToolStripMenuItem
             // 
-            this.拡張機能設定XToolStripMenuItem.Enabled = false;
-            this.拡張機能設定XToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("拡張機能設定XToolStripMenuItem.Image")));
+            resources.ApplyResources(this.拡張機能設定XToolStripMenuItem, "拡張機能設定XToolStripMenuItem");
             this.拡張機能設定XToolStripMenuItem.Name = "拡張機能設定XToolStripMenuItem";
-            this.拡張機能設定XToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
-            this.拡張機能設定XToolStripMenuItem.Text = "拡張機能設定(&X)";
             // 
             // MoveToolStripMenuItem
             // 
+            resources.ApplyResources(this.MoveToolStripMenuItem, "MoveToolStripMenuItem");
             this.MoveToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.PreviousResultToolStripMenuItem,
             this.NextResultToolStripMenuItem,
@@ -278,139 +249,110 @@
             this.MoveLastRowToolStripMenuItem,
             this.MoveLineNumberToolStripMenuItem});
             this.MoveToolStripMenuItem.Name = "MoveToolStripMenuItem";
-            this.MoveToolStripMenuItem.Size = new System.Drawing.Size(64, 22);
-            this.MoveToolStripMenuItem.Text = "移動(&M)";
             // 
             // PreviousResultToolStripMenuItem
             // 
+            resources.ApplyResources(this.PreviousResultToolStripMenuItem, "PreviousResultToolStripMenuItem");
             this.PreviousResultToolStripMenuItem.Name = "PreviousResultToolStripMenuItem";
-            this.PreviousResultToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Left)));
-            this.PreviousResultToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.PreviousResultToolStripMenuItem.Text = "前ページへ移動";
             this.PreviousResultToolStripMenuItem.Click += new System.EventHandler(this.PreviousResultToolStripMenuItem_Click);
             // 
             // NextResultToolStripMenuItem
             // 
+            resources.ApplyResources(this.NextResultToolStripMenuItem, "NextResultToolStripMenuItem");
             this.NextResultToolStripMenuItem.Name = "NextResultToolStripMenuItem";
-            this.NextResultToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Right)));
-            this.NextResultToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.NextResultToolStripMenuItem.Text = "次ページへ移動";
             this.NextResultToolStripMenuItem.Click += new System.EventHandler(this.NextResultToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(226, 6);
             // 
             // MoveFirstRowToolStripMenuItem
             // 
+            resources.ApplyResources(this.MoveFirstRowToolStripMenuItem, "MoveFirstRowToolStripMenuItem");
             this.MoveFirstRowToolStripMenuItem.Name = "MoveFirstRowToolStripMenuItem";
-            this.MoveFirstRowToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.MoveFirstRowToolStripMenuItem.Text = "先頭行へ移動";
             this.MoveFirstRowToolStripMenuItem.Click += new System.EventHandler(this.MoveFirstRowToolStripMenuItem_Click);
             // 
             // MoveLastRowToolStripMenuItem
             // 
+            resources.ApplyResources(this.MoveLastRowToolStripMenuItem, "MoveLastRowToolStripMenuItem");
             this.MoveLastRowToolStripMenuItem.Name = "MoveLastRowToolStripMenuItem";
-            this.MoveLastRowToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.MoveLastRowToolStripMenuItem.Text = "最終行へ移動";
             this.MoveLastRowToolStripMenuItem.Click += new System.EventHandler(this.MoveLastRowToolStripMenuItem_Click);
             // 
             // MoveLineNumberToolStripMenuItem
             // 
+            resources.ApplyResources(this.MoveLineNumberToolStripMenuItem, "MoveLineNumberToolStripMenuItem");
             this.MoveLineNumberToolStripMenuItem.Name = "MoveLineNumberToolStripMenuItem";
-            this.MoveLineNumberToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.J)));
-            this.MoveLineNumberToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.MoveLineNumberToolStripMenuItem.Text = "行番号指定で移動";
             this.MoveLineNumberToolStripMenuItem.Click += new System.EventHandler(this.MoveLineNumberToolStripMenuItem_Click);
             // 
             // HighlightToolStripMenuItem
             // 
+            resources.ApplyResources(this.HighlightToolStripMenuItem, "HighlightToolStripMenuItem");
             this.HighlightToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.HighlightSettingToolStripMenuItem,
             this.JumpPreviousToolStripMenuItem,
             this.JumpNextToolStripMenuItem});
             this.HighlightToolStripMenuItem.Name = "HighlightToolStripMenuItem";
-            this.HighlightToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
-            this.HighlightToolStripMenuItem.Text = "検索(&S)";
             // 
             // HighlightSettingToolStripMenuItem
             // 
-            this.HighlightSettingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("HighlightSettingToolStripMenuItem.Image")));
+            resources.ApplyResources(this.HighlightSettingToolStripMenuItem, "HighlightSettingToolStripMenuItem");
             this.HighlightSettingToolStripMenuItem.Name = "HighlightSettingToolStripMenuItem";
-            this.HighlightSettingToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.HighlightSettingToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.HighlightSettingToolStripMenuItem.Text = "ハイライト設定";
             this.HighlightSettingToolStripMenuItem.Click += new System.EventHandler(this.HighlightSettingToolStripMenuItem_Click);
             // 
             // JumpPreviousToolStripMenuItem
             // 
-            this.JumpPreviousToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("JumpPreviousToolStripMenuItem.Image")));
+            resources.ApplyResources(this.JumpPreviousToolStripMenuItem, "JumpPreviousToolStripMenuItem");
             this.JumpPreviousToolStripMenuItem.Name = "JumpPreviousToolStripMenuItem";
-            this.JumpPreviousToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Up)));
-            this.JumpPreviousToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.JumpPreviousToolStripMenuItem.Text = "前へ移動";
             this.JumpPreviousToolStripMenuItem.Click += new System.EventHandler(this.JumpPreviousToolStripMenuItem_Click);
             // 
             // JumpNextToolStripMenuItem
             // 
-            this.JumpNextToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("JumpNextToolStripMenuItem.Image")));
+            resources.ApplyResources(this.JumpNextToolStripMenuItem, "JumpNextToolStripMenuItem");
             this.JumpNextToolStripMenuItem.Name = "JumpNextToolStripMenuItem";
-            this.JumpNextToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Down)));
-            this.JumpNextToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.JumpNextToolStripMenuItem.Text = "次へ移動";
             this.JumpNextToolStripMenuItem.Click += new System.EventHandler(this.JumpNextToolStripMenuItem_Click);
             // 
             // FilteringToolStripMenuItem
             // 
+            resources.ApplyResources(this.FilteringToolStripMenuItem, "FilteringToolStripMenuItem");
             this.FilteringToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FilteringRangeSettingToolStripMenuItem,
             this.FilteringColumnSettingToolStripMenuItem});
             this.FilteringToolStripMenuItem.Name = "FilteringToolStripMenuItem";
-            this.FilteringToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.FilteringToolStripMenuItem.Text = "フィルタリング(&I)";
             // 
             // FilteringRangeSettingToolStripMenuItem
             // 
-            this.FilteringRangeSettingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("FilteringRangeSettingToolStripMenuItem.Image")));
+            resources.ApplyResources(this.FilteringRangeSettingToolStripMenuItem, "FilteringRangeSettingToolStripMenuItem");
             this.FilteringRangeSettingToolStripMenuItem.Name = "FilteringRangeSettingToolStripMenuItem";
-            this.FilteringRangeSettingToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.FilteringRangeSettingToolStripMenuItem.Text = "範囲指定(&R)";
             this.FilteringRangeSettingToolStripMenuItem.Click += new System.EventHandler(this.FilteringRangeSettingToolStripMenuItem_Click);
             // 
             // FilteringColumnSettingToolStripMenuItem
             // 
-            this.FilteringColumnSettingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("FilteringColumnSettingToolStripMenuItem.Image")));
+            resources.ApplyResources(this.FilteringColumnSettingToolStripMenuItem, "FilteringColumnSettingToolStripMenuItem");
             this.FilteringColumnSettingToolStripMenuItem.Name = "FilteringColumnSettingToolStripMenuItem";
-            this.FilteringColumnSettingToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.FilteringColumnSettingToolStripMenuItem.Text = "カラム指定(&C)";
             this.FilteringColumnSettingToolStripMenuItem.Click += new System.EventHandler(this.FilteringColumnSettingToolStripMenuItem_Click);
             // 
             // ToolsMenu
             // 
-            this.ToolsMenu.Enabled = false;
+            resources.ApplyResources(this.ToolsMenu, "ToolsMenu");
             this.ToolsMenu.Name = "ToolsMenu";
-            this.ToolsMenu.Size = new System.Drawing.Size(74, 22);
-            this.ToolsMenu.Text = "ツール(&T)";
             // 
             // helpMenu
             // 
+            resources.ApplyResources(this.helpMenu, "helpMenu");
             this.helpMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AboutToolStripMenuItem});
             this.helpMenu.Name = "helpMenu";
-            this.helpMenu.Size = new System.Drawing.Size(75, 22);
-            this.helpMenu.Text = "ヘルプ(&H)";
             // 
             // AboutToolStripMenuItem
             // 
-            this.AboutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("AboutToolStripMenuItem.Image")));
+            resources.ApplyResources(this.AboutToolStripMenuItem, "AboutToolStripMenuItem");
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.AboutToolStripMenuItem.Text = "バージョン情報(&A)";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
+            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ExecutionProgressToolStrip,
             this.toolStripStatusLabel2,
@@ -423,115 +365,103 @@
             this.DisplayedRowNumStripStatusLabel,
             this.toolStripStatusLabel1,
             this.StartIndexStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 603);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1010, 23);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
+            this.toolTip.SetToolTip(this.statusStrip, resources.GetString("statusStrip.ToolTip"));
             // 
             // ExecutionProgressToolStrip
             // 
+            resources.ApplyResources(this.ExecutionProgressToolStrip, "ExecutionProgressToolStrip");
             this.ExecutionProgressToolStrip.Name = "ExecutionProgressToolStrip";
-            this.ExecutionProgressToolStrip.Size = new System.Drawing.Size(100, 17);
             // 
             // toolStripStatusLabel2
             // 
+            resources.ApplyResources(this.toolStripStatusLabel2, "toolStripStatusLabel2");
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(37, 18);
-            this.toolStripStatusLabel2.Text = "状態:";
             // 
             // StatusMessageStripStatusLabel
             // 
+            resources.ApplyResources(this.StatusMessageStripStatusLabel, "StatusMessageStripStatusLabel");
             this.StatusMessageStripStatusLabel.Name = "StatusMessageStripStatusLabel";
-            this.StatusMessageStripStatusLabel.Size = new System.Drawing.Size(636, 18);
             this.StatusMessageStripStatusLabel.Spring = true;
-            this.StatusMessageStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // toolStripStatusLabel5
             // 
+            resources.ApplyResources(this.toolStripStatusLabel5, "toolStripStatusLabel5");
             this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(49, 18);
-            this.toolStripStatusLabel5.Text = "総行数:";
             // 
             // TotalLineCountToolStripStatusLabel
             // 
+            resources.ApplyResources(this.TotalLineCountToolStripStatusLabel, "TotalLineCountToolStripStatusLabel");
             this.TotalLineCountToolStripStatusLabel.Name = "TotalLineCountToolStripStatusLabel";
-            this.TotalLineCountToolStripStatusLabel.Size = new System.Drawing.Size(0, 18);
             // 
             // toolStripStatusLabel3
             // 
+            resources.ApplyResources(this.toolStripStatusLabel3, "toolStripStatusLabel3");
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(73, 18);
-            this.toolStripStatusLabel3.Text = "検索結果数:";
             // 
             // TargetLineCountToolStripStatusLabel
             // 
+            resources.ApplyResources(this.TargetLineCountToolStripStatusLabel, "TargetLineCountToolStripStatusLabel");
             this.TargetLineCountToolStripStatusLabel.Name = "TargetLineCountToolStripStatusLabel";
-            this.TargetLineCountToolStripStatusLabel.Size = new System.Drawing.Size(0, 18);
             // 
             // toolStripStatusLabel4
             // 
+            resources.ApplyResources(this.toolStripStatusLabel4, "toolStripStatusLabel4");
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(49, 18);
-            this.toolStripStatusLabel4.Text = "表示数:";
             // 
             // DisplayedRowNumStripStatusLabel
             // 
+            resources.ApplyResources(this.DisplayedRowNumStripStatusLabel, "DisplayedRowNumStripStatusLabel");
             this.DisplayedRowNumStripStatusLabel.Name = "DisplayedRowNumStripStatusLabel";
-            this.DisplayedRowNumStripStatusLabel.Size = new System.Drawing.Size(0, 18);
             // 
             // toolStripStatusLabel1
             // 
+            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(49, 18);
-            this.toolStripStatusLabel1.Text = "開始行:";
             // 
             // StartIndexStripStatusLabel
             // 
+            resources.ApplyResources(this.StartIndexStripStatusLabel, "StartIndexStripStatusLabel");
             this.StartIndexStripStatusLabel.Name = "StartIndexStripStatusLabel";
-            this.StartIndexStripStatusLabel.Size = new System.Drawing.Size(0, 18);
             // 
             // LogDataGridView
             // 
+            resources.ApplyResources(this.LogDataGridView, "LogDataGridView");
             this.LogDataGridView.AllowUserToAddRows = false;
             this.LogDataGridView.AllowUserToDeleteRows = false;
             this.LogDataGridView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.LogDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.LineNumColumn,
             this.MessageColumn});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.MediumBlue;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.LogDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.LogDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.MediumBlue;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.LogDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             this.LogDataGridView.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.LogDataGridView.Location = new System.Drawing.Point(0, 26);
             this.LogDataGridView.Name = "LogDataGridView";
             this.LogDataGridView.ReadOnly = true;
             this.LogDataGridView.RowHeadersVisible = false;
             this.LogDataGridView.RowTemplate.Height = 21;
             this.LogDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.LogDataGridView.Size = new System.Drawing.Size(1010, 577);
-            this.LogDataGridView.TabIndex = 1;
+            this.toolTip.SetToolTip(this.LogDataGridView, resources.GetString("LogDataGridView.ToolTip"));
             this.LogDataGridView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.LogDataGridView_CellPainting);
             this.LogDataGridView.Resize += new System.EventHandler(this.LogDataGridView_Resize);
             // 
             // LineNumColumn
             // 
-            this.LineNumColumn.HeaderText = "行";
+            resources.ApplyResources(this.LineNumColumn, "LineNumColumn");
             this.LineNumColumn.Name = "LineNumColumn";
             this.LineNumColumn.ReadOnly = true;
             this.LineNumColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.LineNumColumn.Width = 30;
             // 
             // MessageColumn
             // 
             this.MessageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MessageColumn.HeaderText = "メッセージ";
+            resources.ApplyResources(this.MessageColumn, "MessageColumn");
             this.MessageColumn.Name = "MessageColumn";
             this.MessageColumn.ReadOnly = true;
             // 
@@ -547,15 +477,15 @@
             // 
             // OpenProjectFileDialog
             // 
-            this.OpenProjectFileDialog.Filter = "\"プロジェクト ファイル (*.flat)|*.flat|すべてのファイル (*.*)|*.*\"";
+            resources.ApplyResources(this.OpenProjectFileDialog, "OpenProjectFileDialog");
             // 
             // SaveProjectFileDialog
             // 
-            this.SaveProjectFileDialog.Filter = "プロジェクト ファイル (*.flat)|*.flat|すべてのファイル (*.*)|*.*";
+            resources.ApplyResources(this.SaveProjectFileDialog, "SaveProjectFileDialog");
             // 
             // SaveExportedLogFileDialog
             // 
-            this.SaveExportedLogFileDialog.Filter = "CSVファイル|*.csv|Excelファイル|*.xlsx";
+            resources.ApplyResources(this.SaveExportedLogFileDialog, "SaveExportedLogFileDialog");
             // 
             // ProgressTimer
             // 
@@ -566,26 +496,17 @@
             this.PrintLogDialog.AllowSelection = true;
             this.PrintLogDialog.UseEXDialog = true;
             // 
-            // RegistExtensionToolStripMenuItem
-            // 
-            this.RegistExtensionToolStripMenuItem.Name = "RegistExtensionToolStripMenuItem";
-            this.RegistExtensionToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
-            this.RegistExtensionToolStripMenuItem.Text = "拡張子をWindowsへ登録(&R)";
-            this.RegistExtensionToolStripMenuItem.Click += new System.EventHandler(this.RegistExtensionToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 626);
             this.Controls.Add(this.LogDataGridView);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "MainForm";
-            this.Text = "FLAT (Flexible Log Analyzing Tool)";
+            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -646,8 +567,6 @@
         private System.Windows.Forms.ToolStripMenuItem MoveLineNumberToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel StatusMessageStripStatusLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LineNumColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MessageColumn;
         private System.Windows.Forms.Timer ProgressTimer;
         private System.Windows.Forms.ToolStripMenuItem PreviousResultToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem NextResultToolStripMenuItem;
@@ -661,6 +580,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel TargetLineCountToolStripStatusLabel;
         private System.Windows.Forms.ToolStripMenuItem RegistExtensionToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LineNumColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MessageColumn;
     }
 }
 
