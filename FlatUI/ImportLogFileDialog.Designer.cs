@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImportLogFileDialog));
             this.OpenLogFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.DialogOKButton = new System.Windows.Forms.Button();
             this.DialogCancelButton = new System.Windows.Forms.Button();
@@ -44,57 +45,39 @@
             // 
             // OpenLogFileDialog
             // 
-            this.OpenLogFileDialog.Filter = "すべてのファイル (*.*)|*.*";
+            resources.ApplyResources(this.OpenLogFileDialog, "OpenLogFileDialog");
             // 
             // DialogOKButton
             // 
             this.DialogOKButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.DialogOKButton.Location = new System.Drawing.Point(236, 65);
+            resources.ApplyResources(this.DialogOKButton, "DialogOKButton");
             this.DialogOKButton.Name = "DialogOKButton";
-            this.DialogOKButton.Size = new System.Drawing.Size(75, 32);
-            this.DialogOKButton.TabIndex = 8;
-            this.DialogOKButton.Text = "OK";
             this.DialogOKButton.UseVisualStyleBackColor = true;
             // 
             // DialogCancelButton
             // 
             this.DialogCancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.DialogCancelButton.Location = new System.Drawing.Point(333, 65);
+            resources.ApplyResources(this.DialogCancelButton, "DialogCancelButton");
             this.DialogCancelButton.Name = "DialogCancelButton";
-            this.DialogCancelButton.Size = new System.Drawing.Size(75, 32);
-            this.DialogCancelButton.TabIndex = 9;
-            this.DialogCancelButton.Text = "Cancel";
             this.DialogCancelButton.UseVisualStyleBackColor = true;
             // 
             // FilePatternTextBox
             // 
-            this.FilePatternTextBox.Enabled = false;
-            this.FilePatternTextBox.Location = new System.Drawing.Point(299, 6);
+            resources.ApplyResources(this.FilePatternTextBox, "FilePatternTextBox");
             this.FilePatternTextBox.Name = "FilePatternTextBox";
-            this.FilePatternTextBox.Size = new System.Drawing.Size(81, 19);
-            this.FilePatternTextBox.TabIndex = 2;
-            this.FilePatternTextBox.Text = "*.log";
             // 
             // FolderRadioButton
             // 
-            this.FolderRadioButton.AutoSize = true;
-            this.FolderRadioButton.Location = new System.Drawing.Point(211, 7);
+            resources.ApplyResources(this.FolderRadioButton, "FolderRadioButton");
             this.FolderRadioButton.Name = "FolderRadioButton";
-            this.FolderRadioButton.Size = new System.Drawing.Size(82, 16);
-            this.FolderRadioButton.TabIndex = 1;
-            this.FolderRadioButton.Text = "フォルダ単位";
             this.FolderRadioButton.UseVisualStyleBackColor = true;
             // 
             // FileRadioButton
             // 
-            this.FileRadioButton.AutoSize = true;
+            resources.ApplyResources(this.FileRadioButton, "FileRadioButton");
             this.FileRadioButton.Checked = true;
-            this.FileRadioButton.Location = new System.Drawing.Point(119, 7);
             this.FileRadioButton.Name = "FileRadioButton";
-            this.FileRadioButton.Size = new System.Drawing.Size(81, 16);
-            this.FileRadioButton.TabIndex = 0;
             this.FileRadioButton.TabStop = true;
-            this.FileRadioButton.Text = "ファイル単位";
             this.FileRadioButton.UseVisualStyleBackColor = true;
             this.FileRadioButton.CheckedChanged += new System.EventHandler(this.FileRadioButton_CheckedChanged);
             // 
@@ -103,56 +86,40 @@
             this.EncodingCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.EncodingCombobox.FormattingEnabled = true;
             this.EncodingCombobox.Items.AddRange(new object[] {
-            "UTF-8",
-            "Shift_JIS",
-            "EUC-JP"});
-            this.EncodingCombobox.Location = new System.Drawing.Point(12, 72);
+            resources.GetString("EncodingCombobox.Items"),
+            resources.GetString("EncodingCombobox.Items1"),
+            resources.GetString("EncodingCombobox.Items2")});
+            resources.ApplyResources(this.EncodingCombobox, "EncodingCombobox");
             this.EncodingCombobox.Name = "EncodingCombobox";
-            this.EncodingCombobox.Size = new System.Drawing.Size(87, 20);
-            this.EncodingCombobox.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 57);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 12);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "文字コード(&C):";
             // 
             // OpenFileButton
             // 
-            this.OpenFileButton.Location = new System.Drawing.Point(386, 27);
+            resources.ApplyResources(this.OpenFileButton, "OpenFileButton");
             this.OpenFileButton.Name = "OpenFileButton";
-            this.OpenFileButton.Size = new System.Drawing.Size(22, 23);
-            this.OpenFileButton.TabIndex = 5;
-            this.OpenFileButton.Text = "..";
             this.OpenFileButton.UseVisualStyleBackColor = true;
             this.OpenFileButton.Click += new System.EventHandler(this.OpenFileButton_Click);
             // 
             // LogFileTextBox
             // 
-            this.LogFileTextBox.Location = new System.Drawing.Point(12, 29);
+            resources.ApplyResources(this.LogFileTextBox, "LogFileTextBox");
             this.LogFileTextBox.Name = "LogFileTextBox";
-            this.LogFileTextBox.Size = new System.Drawing.Size(368, 19);
-            this.LogFileTextBox.TabIndex = 4;
             // 
             // LogTitleLabel
             // 
-            this.LogTitleLabel.AutoSize = true;
-            this.LogTitleLabel.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.LogTitleLabel, "LogTitleLabel");
             this.LogTitleLabel.Name = "LogTitleLabel";
-            this.LogTitleLabel.Size = new System.Drawing.Size(86, 12);
-            this.LogTitleLabel.TabIndex = 3;
-            this.LogTitleLabel.Text = "ログファイル名(&F):";
             // 
             // ImportLogFileDialog
             // 
             this.AcceptButton = this.DialogOKButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.DialogCancelButton;
-            this.ClientSize = new System.Drawing.Size(417, 104);
             this.Controls.Add(this.FilePatternTextBox);
             this.Controls.Add(this.FolderRadioButton);
             this.Controls.Add(this.FileRadioButton);
@@ -165,7 +132,6 @@
             this.Controls.Add(this.DialogOKButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ImportLogFileDialog";
-            this.Text = "ログファイルのインポート";
             this.Load += new System.EventHandler(this.ImportLogFileDialog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

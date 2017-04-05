@@ -243,11 +243,20 @@
     <Compile Include="ViewColumnSettingDialog.Designer.cs">
       <DependentUpon>ViewColumnSettingDialog.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AppSettingDialog.ja.resx">
+      <DependentUpon>AppSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AppSettingDialog.resx">
       <DependentUpon>AppSettingDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FilteringColumnSettingDialog.ja.resx">
+      <DependentUpon>FilteringColumnSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FilteringColumnSettingDialog.resx">
       <DependentUpon>FilteringColumnSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilteringRangeSettingDialog.ja.resx">
+      <DependentUpon>FilteringRangeSettingDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FilteringRangeSettingDialog.resx">
       <DependentUpon>FilteringRangeSettingDialog.cs</DependentUpon>
@@ -255,8 +264,14 @@
     <EmbeddedResource Include="FLATAboutBox.resx">
       <DependentUpon>FLATAboutBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HighlightSettingDialog.ja.resx">
+      <DependentUpon>HighlightSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HighlightSettingDialog.resx">
       <DependentUpon>HighlightSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportLogFileDialog.ja.resx">
+      <DependentUpon>ImportLogFileDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImportLogFileDialog.resx">
       <DependentUpon>ImportLogFileDialog.cs</DependentUpon>
@@ -266,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProjectSettingDialog.ja.resx">
+      <DependentUpon>NewProjectSettingDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewProjectSettingDialog.resx">
       <DependentUpon>NewProjectSettingDialog.cs</DependentUpon>

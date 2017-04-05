@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FilteringColumnSettingDialog));
             this.label1 = new System.Windows.Forms.Label();
             this.ColumnListBox = new System.Windows.Forms.ListBox();
             this.DialogOKButton = new System.Windows.Forms.Button();
@@ -42,41 +43,28 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 8);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "カラム一覧:";
             // 
             // ColumnListBox
             // 
             this.ColumnListBox.FormattingEnabled = true;
-            this.ColumnListBox.ItemHeight = 12;
-            this.ColumnListBox.Location = new System.Drawing.Point(14, 23);
+            resources.ApplyResources(this.ColumnListBox, "ColumnListBox");
             this.ColumnListBox.Name = "ColumnListBox";
-            this.ColumnListBox.Size = new System.Drawing.Size(183, 328);
-            this.ColumnListBox.TabIndex = 1;
             this.ColumnListBox.SelectedIndexChanged += new System.EventHandler(this.ColumnListBox_SelectedIndexChanged);
             // 
             // DialogOKButton
             // 
             this.DialogOKButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.DialogOKButton.Location = new System.Drawing.Point(491, 324);
+            resources.ApplyResources(this.DialogOKButton, "DialogOKButton");
             this.DialogOKButton.Name = "DialogOKButton";
-            this.DialogOKButton.Size = new System.Drawing.Size(83, 27);
-            this.DialogOKButton.TabIndex = 8;
-            this.DialogOKButton.Text = "OK";
             this.DialogOKButton.UseVisualStyleBackColor = true;
             // 
             // DialogCancelButton
             // 
             this.DialogCancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.DialogCancelButton.Location = new System.Drawing.Point(595, 324);
+            resources.ApplyResources(this.DialogCancelButton, "DialogCancelButton");
             this.DialogCancelButton.Name = "DialogCancelButton";
-            this.DialogCancelButton.Size = new System.Drawing.Size(83, 27);
-            this.DialogCancelButton.TabIndex = 9;
-            this.DialogCancelButton.Text = "Cancel";
             this.DialogCancelButton.UseVisualStyleBackColor = true;
             // 
             // SearchCriteriaDataGridView
@@ -86,27 +74,24 @@
             this.TerminalColumn,
             this.OperatorColumn,
             this.ValueColumn});
-            this.SearchCriteriaDataGridView.Location = new System.Drawing.Point(203, 23);
+            resources.ApplyResources(this.SearchCriteriaDataGridView, "SearchCriteriaDataGridView");
             this.SearchCriteriaDataGridView.Name = "SearchCriteriaDataGridView";
             this.SearchCriteriaDataGridView.RowTemplate.Height = 21;
-            this.SearchCriteriaDataGridView.Size = new System.Drawing.Size(475, 295);
-            this.SearchCriteriaDataGridView.TabIndex = 10;
             this.SearchCriteriaDataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.SearchCriteriaDataGridView_CellEndEdit);
             this.SearchCriteriaDataGridView.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.SearchCriteriaDataGridView_UserAddedRow);
             this.SearchCriteriaDataGridView.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.SearchCriteriaDataGridView_UserDeletingRow);
             // 
             // TerminalColumn
             // 
-            this.TerminalColumn.HeaderText = "And/Or";
+            resources.ApplyResources(this.TerminalColumn, "TerminalColumn");
             this.TerminalColumn.Items.AddRange(new object[] {
             "And",
             "Or"});
             this.TerminalColumn.Name = "TerminalColumn";
-            this.TerminalColumn.Width = 70;
             // 
             // OperatorColumn
             // 
-            this.OperatorColumn.HeaderText = "条件";
+            resources.ApplyResources(this.OperatorColumn, "OperatorColumn");
             this.OperatorColumn.Items.AddRange(new object[] {
             "=",
             "!=",
@@ -121,25 +106,20 @@
             // ValueColumn
             // 
             this.ValueColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ValueColumn.HeaderText = "値";
+            resources.ApplyResources(this.ValueColumn, "ValueColumn");
             this.ValueColumn.Name = "ValueColumn";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(201, 8);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 12);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "検索条件:";
             // 
             // FilteringColumnSettingDialog
             // 
             this.AcceptButton = this.DialogOKButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.DialogCancelButton;
-            this.ClientSize = new System.Drawing.Size(693, 360);
             this.Controls.Add(this.SearchCriteriaDataGridView);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DialogCancelButton);
@@ -150,8 +130,6 @@
             this.Name = "FilteringColumnSettingDialog";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "カラム設定";
             ((System.ComponentModel.ISupportInitialize)(this.SearchCriteriaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
