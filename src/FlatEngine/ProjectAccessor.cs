@@ -33,6 +33,10 @@ using FlatEngine.Export;
 
 namespace FlatEngine
 {
+    /// <summary>
+    /// Project file accessor.
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public class ProjectAccessor
     {
         private Log log = new Log(MethodBase.GetCurrentMethod().DeclaringType);

@@ -27,6 +27,10 @@ using System.Data.SQLite;
 
 namespace FlatEngine.IntermediateLog
 {
+    /// <summary>
+    /// SQLite utility
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public class SQLiteUtil
     {
         private static Log log = new Log(MethodBase.GetCurrentMethod().DeclaringType);

@@ -28,6 +28,7 @@ namespace FlatEngine
     /// <summary>
     /// Parsed log data
     /// </summary>
+    /// <author>Miura Acoustic</author>
     public class ParsedLog
     {
         /// <summary>

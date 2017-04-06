@@ -38,6 +38,7 @@ namespace FlatEngine.IntermediateLog
     /// <summary>
     /// Read parsed log lines from database
     /// </summary>
+    /// <author>Miura Acoustic</author>
     public class IntermediateLogReader : IDisposable
     {
         /// <summary>

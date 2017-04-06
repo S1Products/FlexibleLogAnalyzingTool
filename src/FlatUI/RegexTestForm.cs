@@ -31,6 +31,10 @@ using System.Text.RegularExpressions;
 
 namespace FlexibleLogAnalyzerTool
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public partial class RegexTestForm : Form
     {
         private const string SEPARATOR = " | ";

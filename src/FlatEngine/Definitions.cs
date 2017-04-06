@@ -26,6 +26,10 @@ using System.Drawing;
 
 namespace FlatEngine
 {
+    /// <summary>
+    /// Analyzing pattern definition
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     [Serializable]
     public class PatternDefinition
     {

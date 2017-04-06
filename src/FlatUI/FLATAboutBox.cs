@@ -28,6 +28,10 @@ using System.Windows.Forms;
 
 namespace FlexibleLogAnalyzerTool
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     partial class FLATAboutBox : Form
     {
         public FLATAboutBox()

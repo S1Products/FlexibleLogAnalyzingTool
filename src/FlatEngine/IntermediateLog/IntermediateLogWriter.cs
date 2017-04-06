@@ -35,6 +35,10 @@ using System.Data.SQLite;
 
 namespace FlatEngine.IntermediateLog
 {
+    /// <summary>
+    /// Write log lines to database
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public class IntermediateLogWriter : IDisposable
     {
         /// <summary>
