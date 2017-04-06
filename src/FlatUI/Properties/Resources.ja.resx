@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>"FLAT (プロジェクト名: "</value>
+  </data>
+  <data name="ColumnTitleFileName" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="ColumnTitleLineNumber" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="ColumnTitleMessage" xml:space="preserve">
+    <value>メッセージ</value>
+  </data>
+  <data name="DefaultFontName" xml:space="preserve">
+    <value>ＭＳ ゴシック</value>
+  </data>
+  <data name="DialogTitleWarning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="LabelFileName" xml:space="preserve">
+    <value>ファイル名(&amp;F)</value>
+  </data>
+  <data name="LabelFolderName" xml:space="preserve">
+    <value>フォルダ名(&amp;F)</value>
+  </data>
+  <data name="MessageAnalyzingLog" xml:space="preserve">
+    <value>ログを解析中です... ファイル名: </value>
+  </data>
+  <data name="MessageChoosePattern" xml:space="preserve">
+    <value>パターンを選択してください。</value>
+  </data>
+  <data name="MessageElapsedSecUnit" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="MessageFinishedAnalyzingLog" xml:space="preserve">
+    <value>ログの解析が終了しました。(経過時間: </value>
+  </data>
+  <data name="MessageLineNumber" xml:space="preserve">
+    <value>行番号</value>
+  </data>
+  <data name="MessageLogDisplayed" xml:space="preserve">
+    <value>ログを表示しました。</value>
+  </data>
+  <data name="MessageMovedRow" xml:space="preserve">
+    <value>指定行に移動しました。</value>
+  </data>
+  <data name="MessageMoveFirstRow" xml:space="preserve">
+    <value>先頭行に移動しました。</value>
+  </data>
+  <data name="MessageMoveLastRow" xml:space="preserve">
+    <value>最終行に移動しました。</value>
+  </data>
+  <data name="MessageProjectFileSaved" xml:space="preserve">
+    <value>プロジェクトファイルを保存しました。</value>
+  </data>
+  <data name="MessageProjectName" xml:space="preserve">
+    <value>プロジェクト名:</value>
+  </data>
+  <data name="MessageRegisteredExtension" xml:space="preserve">
+    <value>拡張子を登録しました。</value>
+  </data>
+  <data name="MessageSaveSetting" xml:space="preserve">
+    <value>設定を保存しました。</value>
+  </data>
+  <data name="MessageSpecifyRowNumber" xml:space="preserve">
+    <value>行番号を入力してください。</value>
+  </data>
+  <data name="NotDefinedKeyword" xml:space="preserve">
+    <value>キーワードを指定してください。</value>
+  </data>
+  <data name="WarnCouldNotCreateProjectFile" xml:space="preserve">
+    <value>新しいプロジェクトを作成できませんでした。</value>
+  </data>
+  <data name="WarnCouldNotDisplayColumnSetting" xml:space="preserve">
+    <value>カラム設定表示中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnCouldNotExitApp" xml:space="preserve">
+    <value>アプリケーションを終了できませんでした。</value>
+  </data>
+  <data name="WarnCouldNotExportLog" xml:space="preserve">
+    <value>ログをエクスポートできませんでした。</value>
+  </data>
+  <data name="WarnCouldNotImportLog" xml:space="preserve">
+    <value>ログをインポートできませんでした。</value>
+  </data>
+  <data name="WarnCouldNotOpenProject" xml:space="preserve">
+    <value>プロジェクトファイルを開けませんでした。</value>
+  </data>
+  <data name="WarnCouldNotPrintLog" xml:space="preserve">
+    <value>ログを印刷できませんでした。</value>
+  </data>
+  <data name="WarnCouldNotSaveProjectFile" xml:space="preserve">
+    <value>プロジェクトを保存できませんでした。</value>
+  </data>
+  <data name="WarnDidNotSpecifiedLogFile" xml:space="preserve">
+    <value>ログファイル名を指定してください。</value>
+  </data>
+  <data name="WarnErrorAnalyzingPattern" xml:space="preserve">
+    <value>解析パターン設定表示中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorApplicationSetting" xml:space="preserve">
+    <value>アプリケーション設定表示中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorDisplayFilteringColumn" xml:space="preserve">
+    <value>カラム指定表示中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorDisplayFilteringRange" xml:space="preserve">
+    <value>範囲設定表示中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorDisplayHelp" xml:space="preserve">
+    <value>ヘルプ表示中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorDisplayLog" xml:space="preserve">
+    <value>ログデータ表示中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorHighlightSetting" xml:space="preserve">
+    <value>ハイライト設定表示中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorJumpHighlightRow" xml:space="preserve">
+    <value>ハイライトへのジャンプ中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorMoveFirstRow" xml:space="preserve">
+    <value>先頭行へ移動中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorMoveLastRow" xml:space="preserve">
+    <value>最終行へ移動中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorMoveSpecifiedRow" xml:space="preserve">
+    <value>指定行へ移動中にエラーが発生しました。</value>
+  </data>
+  <data name="WarnErrorNotRegisteredExtension" xml:space="preserve">
+    <value>拡張子を登録できませんでした。</value>
+  </data>
+  <data name="WarnNotFoundJumpableRow" xml:space="preserve">
+    <value>ジャンプ可能な行が見つかりませんでした</value>
+  </data>
+  <data name="WarnNotFoundLogLines" xml:space="preserve">
+    <value>ログが存在しない状態では無効です。</value>
+  </data>
+</root>

@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FilePatternTextBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 12</value>
+  </data>
+  <data name="FolderRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;OpenLogFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="OpenFileButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;FilteringRangeButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="FilteringColumnButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 23</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EncodingCombobox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="FilteringColumnButton.Text" xml:space="preserve">
+    <value>Column filter</value>
+  </data>
+  <data name="Regex.Text" xml:space="preserve">
+    <value>Regular expression</value>
+  </data>
+  <data name="EncodingCombobox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ProjectNameTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;FilteringColumnButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>New project</value>
+  </data>
+  <data name="&gt;&gt;OpenFileButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OpenFileButton.Text" xml:space="preserve">
+    <value>..</value>
+  </data>
+  <data name="&gt;&gt;LogTitleLabel.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LogTitleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;ProjectNameTextbox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="FileRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="PatternListView.Items" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0
+        ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2Vu
+        PWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0JAAAA
+        BFRleHQKSW1hZ2VJbmRleAxTdWJJdGVtQ291bnQIU3ViSXRlbTEJQmFja0NvbG9yB0NoZWNrZWQERm9u
+        dAlGb3JlQ29sb3IXVXNlSXRlbVN0eWxlRm9yU3ViSXRlbXMBAAAEBAAEBAAICDFTeXN0ZW0uV2luZG93
+        cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0rTGlzdFZpZXdTdWJJdGVtAgAAABRTeXN0ZW0uRHJhd2luZy5Db2xv
+        cgMAAAABE1N5c3RlbS5EcmF3aW5nLkZvbnQDAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAECAAAA
+        BgQAAAAHRGVmYXVsdP////8CAAAACQUAAAAF+v///xRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFt
+        ZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwMAAAAKAAAAAAAAAAAYAAEAAAkHAAAAAfj////6
+        ////CgAAAAAAAAAAGgABAAEFBQAAADFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0rTGlz
+        dFZpZXdTdWJJdGVtBAAAAAR0ZXh0BG5hbWUFc3R5bGUIdXNlckRhdGEBAQQCPlN5c3RlbS5XaW5kb3dz
+        LkZvcm1zLkxpc3RWaWV3SXRlbStMaXN0Vmlld1N1Ykl0ZW0rU3ViSXRlbVN0eWxlAgAAAAIAAAAGCQAA
+        AAwjTm90IGRlZmluZWQKCgoFBwAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5
+        bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQMAAAAbU3lzdGVtLkRyYXdpbmcuR3Jh
+        cGhpY3NVbml0AwAAAAMAAAAGCgAAAAxNUyBVSSBHb3RoaWMAABBBBfX///8YU3lzdGVtLkRyYXdpbmcu
+        Rm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAAAAAAAAX0////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNz
+        VW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAAL
+</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Project &amp;name:</value>
+  </data>
+  <data name="OpenFileButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 23</value>
+  </data>
+  <data name="&gt;&gt;PatternListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FileRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;FilePatternTextBox.Name" xml:space="preserve">
+    <value>FilePatternTextBox</value>
+  </data>
+  <data name="FilteringRangeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="DialogOKButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 295</value>
+  </data>
+  <data name="EncodingCombobox.Items" xml:space="preserve">
+    <value>UTF-8</value>
+  </data>
+  <data name="&gt;&gt;Regex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="DialogCancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="LogFileTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="LogTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 12</value>
+  </data>
+  <data name="&gt;&gt;FilePatternTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DialogCancelButton.Name" xml:space="preserve">
+    <value>DialogCancelButton</value>
+  </data>
+  <data name="&gt;&gt;PatternListView.Name" xml:space="preserve">
+    <value>PatternListView</value>
+  </data>
+  <data name="DialogCancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="DialogOKButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;LogFolderBrowserDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LogFileTextBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="PatternNameHeader.Text" xml:space="preserve">
+    <value>Pattern name</value>
+  </data>
+  <data name="PatternListView.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;DialogOKButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="EncodingCombobox.Items2" xml:space="preserve">
+    <value>EUC-JP</value>
+  </data>
+  <data name="OpenFileButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 35</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;ProjectNameTextbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="FilePatternTextBox.Text" xml:space="preserve">
+    <value>*.log</value>
+  </data>
+  <data name="&gt;&gt;LogFileTextBox.Name" xml:space="preserve">
+    <value>LogFileTextBox</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="FilteringRangeButton.Text" xml:space="preserve">
+    <value>Range filter</value>
+  </data>
+  <data name="EncodingCombobox.Items1" xml:space="preserve">
+    <value>Shift_JIS</value>
+  </data>
+  <data name="DialogOKButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OpenFileButton.Name" xml:space="preserve">
+    <value>OpenFileButton</value>
+  </data>
+  <data name="&gt;&gt;OpenFileButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;PatternListView.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ProjectNameTextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>508, 19</value>
+  </data>
+  <data name="FilteringRangeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 23</value>
+  </data>
+  <data name="&gt;&gt;FilteringRangeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LogTitleLabel.Name" xml:space="preserve">
+    <value>LogTitleLabel</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="Regex.Width" type="System.Int32, mscorlib">
+    <value>305</value>
+  </data>
+  <data name="&gt;&gt;LogFileTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Regex.Name" xml:space="preserve">
+    <value>Regex</value>
+  </data>
+  <data name="&gt;&gt;FolderRadioButton.Name" xml:space="preserve">
+    <value>FolderRadioButton</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 278</value>
+  </data>
+  <data name="&gt;&gt;OpenLogFileDialog.Name" xml:space="preserve">
+    <value>OpenLogFileDialog</value>
+  </data>
+  <data name="FileRadioButton.Text" xml:space="preserve">
+    <value>Per file</value>
+  </data>
+  <data name="FilteringColumnButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 23</value>
+  </data>
+  <data name="EncodingCombobox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 37</value>
+  </data>
+  <data name="&gt;&gt;FileRadioButton.Name" xml:space="preserve">
+    <value>FileRadioButton</value>
+  </data>
+  <data name="&gt;&gt;EncodingCombobox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpenFileButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="FilePatternTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 16</value>
+  </data>
+  <data name="&gt;&gt;LogFileTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 23</value>
+  </data>
+  <data name="ProjectNameTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 24</value>
+  </data>
+  <data name="&gt;&gt;FolderRadioButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PatternListView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FolderRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DialogOKButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 35</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="PatternListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>508, 133</value>
+  </data>
+  <data name="DialogCancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 35</value>
+  </data>
+  <data name="LogFileTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 39</value>
+  </data>
+  <data name="&gt;&gt;ProjectNameTextbox.Name" xml:space="preserve">
+    <value>ProjectNameTextbox</value>
+  </data>
+  <data name="&gt;&gt;FolderRadioButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FilePatternTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 19</value>
+  </data>
+  <data name="&gt;&gt;DialogOKButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PatternNameHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;FileRadioButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="LogFileTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 19</value>
+  </data>
+  <data name="&gt;&gt;LogTitleLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="PatternListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 139</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>&amp;Analyzing pattern:</value>
+  </data>
+  <data name="OpenLogFileDialog.Filter" xml:space="preserve">
+    <value>すべてのファイル (*.*)|*.*</value>
+  </data>
+  <data name="LogTitleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;DialogCancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FilteringRangeButton.Name" xml:space="preserve">
+    <value>FilteringRangeButton</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 12</value>
+  </data>
+  <data name="PatternNameHeader.Width" type="System.Int32, mscorlib">
+    <value>194</value>
+  </data>
+  <data name="FileRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 49</value>
+  </data>
+  <data name="&gt;&gt;DialogCancelButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LogTitleLabel.Text" xml:space="preserve">
+    <value>&amp;Log file name:</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;FilteringColumnButton.Name" xml:space="preserve">
+    <value>FilteringColumnButton</value>
+  </data>
+  <data name="FilteringRangeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 23</value>
+  </data>
+  <data name="&gt;&gt;FilteringColumnButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;FilteringColumnButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DialogCancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 295</value>
+  </data>
+  <data name="LogTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 21</value>
+  </data>
+  <data name="&gt;&gt;FilePatternTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;FilePatternTextBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="FileRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 17</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 124</value>
+  </data>
+  <data name="&gt;&gt;FileRadioButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>534, 343</value>
+  </data>
+  <data name="LogTitleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DialogOKButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FilteringRangeButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 60</value>
+  </data>
+  <data name="&gt;&gt;DialogCancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProjectNameTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FolderRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LogFolderBrowserDialog.Name" xml:space="preserve">
+    <value>LogFolderBrowserDialog</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="FilteringColumnButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PatternNameHeader.Name" xml:space="preserve">
+    <value>PatternNameHeader</value>
+  </data>
+  <data name="FolderRadioButton.Text" xml:space="preserve">
+    <value>Per folder</value>
+  </data>
+  <data name="FilePatternTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;EncodingCombobox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Log file setting</value>
+  </data>
+  <data name="&gt;&gt;EncodingCombobox.Name" xml:space="preserve">
+    <value>EncodingCombobox</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>NewProjectSettingDialog</value>
+  </data>
+  <data name="&gt;&gt;FileRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FolderRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 16</value>
+  </data>
+  <data name="EncodingCombobox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 66</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Filtering setting:</value>
+  </data>
+  <data name="FolderRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 17</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>&amp;Character set:</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DialogOKButton.Name" xml:space="preserve">
+    <value>DialogOKButton</value>
+  </data>
+  <metadata name="LogFolderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>180, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="OpenLogFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
