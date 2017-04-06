@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 ### Added
 - CHANGELOG.md added.
+- Parsed element list view added to AnalyzePatternTest view.
 
 ### Changed
 - Change installation guide to README.ja.md 

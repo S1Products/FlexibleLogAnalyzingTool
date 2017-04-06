@@ -38,6 +38,11 @@
             this.ResultListBox = new System.Windows.Forms.ListBox();
             this.EvaluateButton = new System.Windows.Forms.Button();
             this.RegexTextbox = new System.Windows.Forms.RichTextBox();
+            this.ParsedElementsListView = new System.Windows.Forms.ListView();
+            this.ValueHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ElementCountLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -82,6 +87,7 @@
             this.ResultListBox.FormattingEnabled = true;
             this.ResultListBox.Name = "ResultListBox";
             this.ResultListBox.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.ResultListBox_DrawItem);
+            this.ResultListBox.SelectedIndexChanged += new System.EventHandler(this.ResultListBox_SelectedIndexChanged);
             // 
             // EvaluateButton
             // 
@@ -96,12 +102,46 @@
             this.RegexTextbox.Name = "RegexTextbox";
             this.RegexTextbox.TextChanged += new System.EventHandler(this.RegexTextbox_TextChanged);
             // 
+            // ParsedElementsListView
+            // 
+            resources.ApplyResources(this.ParsedElementsListView, "ParsedElementsListView");
+            this.ParsedElementsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ValueHeader});
+            this.ParsedElementsListView.GridLines = true;
+            this.ParsedElementsListView.Name = "ParsedElementsListView";
+            this.ParsedElementsListView.UseCompatibleStateImageBehavior = false;
+            this.ParsedElementsListView.View = System.Windows.Forms.View.Details;
+            // 
+            // ValueHeader
+            // 
+            resources.ApplyResources(this.ValueHeader, "ValueHeader");
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // ElementCountLabel
+            // 
+            resources.ApplyResources(this.ElementCountLabel, "ElementCountLabel");
+            this.ElementCountLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ElementCountLabel.Name = "ElementCountLabel";
+            // 
             // RegexTestForm
             // 
             this.AcceptButton = this.DialogOKButton;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.DialogCancelButton;
+            this.Controls.Add(this.ElementCountLabel);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.ParsedElementsListView);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.RegexTextbox);
             this.Controls.Add(this.EvaluateButton);
             this.Controls.Add(this.ResultListBox);
@@ -131,5 +171,10 @@
         private System.Windows.Forms.ListBox ResultListBox;
         private System.Windows.Forms.Button EvaluateButton;
         private System.Windows.Forms.RichTextBox RegexTextbox;
+        private System.Windows.Forms.ListView ParsedElementsListView;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ColumnHeader ValueHeader;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label ElementCountLabel;
     }
 }
