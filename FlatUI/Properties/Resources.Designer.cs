@@ -81,7 +81,7 @@ namespace FlexibleLogAnalyzerTool.Properties {
         }
         
         /// <summary>
-        ///   &quot;FLAT (Project name: &quot; に類似しているローカライズされた文字列を検索します。
+        ///   FLAT (Project name:  に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ApplicationTitle {
             get {

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.FileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.AddNewProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -100,7 +100,6 @@
             // 
             // menuStrip
             // 
-            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileMenu,
             this.SettingsMenu,
@@ -109,12 +108,11 @@
             this.FilteringToolStripMenuItem,
             this.ToolsMenu,
             this.helpMenu});
+            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Name = "menuStrip";
-            this.toolTip.SetToolTip(this.menuStrip, resources.GetString("menuStrip.ToolTip"));
             // 
             // FileMenu
             // 
-            resources.ApplyResources(this.FileMenu, "FileMenu");
             this.FileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AddNewProjectToolStripMenuItem,
             this.OpenProjectToolStripMenuItem,
@@ -127,6 +125,7 @@
             this.PrintLogToolStripMenuItem,
             this.toolStripSeparator5,
             this.ExitToolStripMenuItem});
+            resources.ApplyResources(this.FileMenu, "FileMenu");
             this.FileMenu.Name = "FileMenu";
             // 
             // AddNewProjectToolStripMenuItem
@@ -149,14 +148,14 @@
             // 
             // SaveAsProjectToolStripMenuItem
             // 
-            resources.ApplyResources(this.SaveAsProjectToolStripMenuItem, "SaveAsProjectToolStripMenuItem");
             this.SaveAsProjectToolStripMenuItem.Name = "SaveAsProjectToolStripMenuItem";
+            resources.ApplyResources(this.SaveAsProjectToolStripMenuItem, "SaveAsProjectToolStripMenuItem");
             this.SaveAsProjectToolStripMenuItem.Click += new System.EventHandler(this.SaveAsProjectToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
-            resources.ApplyResources(this.toolStripSeparator7, "toolStripSeparator7");
             this.toolStripSeparator7.Name = "toolStripSeparator7";
+            resources.ApplyResources(this.toolStripSeparator7, "toolStripSeparator7");
             // 
             // ImportLogToolStripMenuItem
             // 
@@ -172,8 +171,8 @@
             // 
             // toolStripSeparator6
             // 
-            resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
             this.toolStripSeparator6.Name = "toolStripSeparator6";
+            resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
             // 
             // PrintLogToolStripMenuItem
             // 
@@ -183,8 +182,8 @@
             // 
             // toolStripSeparator5
             // 
-            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
             this.toolStripSeparator5.Name = "toolStripSeparator5";
+            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
             // 
             // ExitToolStripMenuItem
             // 
@@ -194,7 +193,6 @@
             // 
             // SettingsMenu
             // 
-            resources.ApplyResources(this.SettingsMenu, "SettingsMenu");
             this.SettingsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ViewColumnSettingToolStripMenuItem,
             this.AnalyzingPatternSettingToolStripMenuItem,
@@ -203,6 +201,7 @@
             this.RegistExtensionToolStripMenuItem,
             this.拡張機能設定XToolStripMenuItem});
             this.SettingsMenu.Name = "SettingsMenu";
+            resources.ApplyResources(this.SettingsMenu, "SettingsMenu");
             // 
             // ViewColumnSettingToolStripMenuItem
             // 
@@ -218,8 +217,8 @@
             // 
             // toolStripSeparator2
             // 
-            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             this.toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             // 
             // AppSettingToolStripMenuItem
             // 
@@ -229,8 +228,8 @@
             // 
             // RegistExtensionToolStripMenuItem
             // 
-            resources.ApplyResources(this.RegistExtensionToolStripMenuItem, "RegistExtensionToolStripMenuItem");
             this.RegistExtensionToolStripMenuItem.Name = "RegistExtensionToolStripMenuItem";
+            resources.ApplyResources(this.RegistExtensionToolStripMenuItem, "RegistExtensionToolStripMenuItem");
             this.RegistExtensionToolStripMenuItem.Click += new System.EventHandler(this.RegistExtensionToolStripMenuItem_Click);
             // 
             // 拡張機能設定XToolStripMenuItem
@@ -240,7 +239,6 @@
             // 
             // MoveToolStripMenuItem
             // 
-            resources.ApplyResources(this.MoveToolStripMenuItem, "MoveToolStripMenuItem");
             this.MoveToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.PreviousResultToolStripMenuItem,
             this.NextResultToolStripMenuItem,
@@ -249,50 +247,51 @@
             this.MoveLastRowToolStripMenuItem,
             this.MoveLineNumberToolStripMenuItem});
             this.MoveToolStripMenuItem.Name = "MoveToolStripMenuItem";
+            resources.ApplyResources(this.MoveToolStripMenuItem, "MoveToolStripMenuItem");
             // 
             // PreviousResultToolStripMenuItem
             // 
-            resources.ApplyResources(this.PreviousResultToolStripMenuItem, "PreviousResultToolStripMenuItem");
             this.PreviousResultToolStripMenuItem.Name = "PreviousResultToolStripMenuItem";
+            resources.ApplyResources(this.PreviousResultToolStripMenuItem, "PreviousResultToolStripMenuItem");
             this.PreviousResultToolStripMenuItem.Click += new System.EventHandler(this.PreviousResultToolStripMenuItem_Click);
             // 
             // NextResultToolStripMenuItem
             // 
-            resources.ApplyResources(this.NextResultToolStripMenuItem, "NextResultToolStripMenuItem");
             this.NextResultToolStripMenuItem.Name = "NextResultToolStripMenuItem";
+            resources.ApplyResources(this.NextResultToolStripMenuItem, "NextResultToolStripMenuItem");
             this.NextResultToolStripMenuItem.Click += new System.EventHandler(this.NextResultToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // MoveFirstRowToolStripMenuItem
             // 
-            resources.ApplyResources(this.MoveFirstRowToolStripMenuItem, "MoveFirstRowToolStripMenuItem");
             this.MoveFirstRowToolStripMenuItem.Name = "MoveFirstRowToolStripMenuItem";
+            resources.ApplyResources(this.MoveFirstRowToolStripMenuItem, "MoveFirstRowToolStripMenuItem");
             this.MoveFirstRowToolStripMenuItem.Click += new System.EventHandler(this.MoveFirstRowToolStripMenuItem_Click);
             // 
             // MoveLastRowToolStripMenuItem
             // 
-            resources.ApplyResources(this.MoveLastRowToolStripMenuItem, "MoveLastRowToolStripMenuItem");
             this.MoveLastRowToolStripMenuItem.Name = "MoveLastRowToolStripMenuItem";
+            resources.ApplyResources(this.MoveLastRowToolStripMenuItem, "MoveLastRowToolStripMenuItem");
             this.MoveLastRowToolStripMenuItem.Click += new System.EventHandler(this.MoveLastRowToolStripMenuItem_Click);
             // 
             // MoveLineNumberToolStripMenuItem
             // 
-            resources.ApplyResources(this.MoveLineNumberToolStripMenuItem, "MoveLineNumberToolStripMenuItem");
             this.MoveLineNumberToolStripMenuItem.Name = "MoveLineNumberToolStripMenuItem";
+            resources.ApplyResources(this.MoveLineNumberToolStripMenuItem, "MoveLineNumberToolStripMenuItem");
             this.MoveLineNumberToolStripMenuItem.Click += new System.EventHandler(this.MoveLineNumberToolStripMenuItem_Click);
             // 
             // HighlightToolStripMenuItem
             // 
-            resources.ApplyResources(this.HighlightToolStripMenuItem, "HighlightToolStripMenuItem");
             this.HighlightToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.HighlightSettingToolStripMenuItem,
             this.JumpPreviousToolStripMenuItem,
             this.JumpNextToolStripMenuItem});
             this.HighlightToolStripMenuItem.Name = "HighlightToolStripMenuItem";
+            resources.ApplyResources(this.HighlightToolStripMenuItem, "HighlightToolStripMenuItem");
             // 
             // HighlightSettingToolStripMenuItem
             // 
@@ -314,11 +313,11 @@
             // 
             // FilteringToolStripMenuItem
             // 
-            resources.ApplyResources(this.FilteringToolStripMenuItem, "FilteringToolStripMenuItem");
             this.FilteringToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FilteringRangeSettingToolStripMenuItem,
             this.FilteringColumnSettingToolStripMenuItem});
             this.FilteringToolStripMenuItem.Name = "FilteringToolStripMenuItem";
+            resources.ApplyResources(this.FilteringToolStripMenuItem, "FilteringToolStripMenuItem");
             // 
             // FilteringRangeSettingToolStripMenuItem
             // 
@@ -339,10 +338,10 @@
             // 
             // helpMenu
             // 
-            resources.ApplyResources(this.helpMenu, "helpMenu");
             this.helpMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AboutToolStripMenuItem});
             this.helpMenu.Name = "helpMenu";
+            resources.ApplyResources(this.helpMenu, "helpMenu");
             // 
             // AboutToolStripMenuItem
             // 
@@ -352,7 +351,6 @@
             // 
             // statusStrip
             // 
-            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ExecutionProgressToolStrip,
             this.toolStripStatusLabel2,
@@ -365,89 +363,88 @@
             this.DisplayedRowNumStripStatusLabel,
             this.toolStripStatusLabel1,
             this.StartIndexStripStatusLabel});
+            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Name = "statusStrip";
-            this.toolTip.SetToolTip(this.statusStrip, resources.GetString("statusStrip.ToolTip"));
             // 
             // ExecutionProgressToolStrip
             // 
-            resources.ApplyResources(this.ExecutionProgressToolStrip, "ExecutionProgressToolStrip");
             this.ExecutionProgressToolStrip.Name = "ExecutionProgressToolStrip";
+            resources.ApplyResources(this.ExecutionProgressToolStrip, "ExecutionProgressToolStrip");
             // 
             // toolStripStatusLabel2
             // 
-            resources.ApplyResources(this.toolStripStatusLabel2, "toolStripStatusLabel2");
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            resources.ApplyResources(this.toolStripStatusLabel2, "toolStripStatusLabel2");
             // 
             // StatusMessageStripStatusLabel
             // 
-            resources.ApplyResources(this.StatusMessageStripStatusLabel, "StatusMessageStripStatusLabel");
             this.StatusMessageStripStatusLabel.Name = "StatusMessageStripStatusLabel";
+            resources.ApplyResources(this.StatusMessageStripStatusLabel, "StatusMessageStripStatusLabel");
             this.StatusMessageStripStatusLabel.Spring = true;
             // 
             // toolStripStatusLabel5
             // 
-            resources.ApplyResources(this.toolStripStatusLabel5, "toolStripStatusLabel5");
             this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            resources.ApplyResources(this.toolStripStatusLabel5, "toolStripStatusLabel5");
             // 
             // TotalLineCountToolStripStatusLabel
             // 
-            resources.ApplyResources(this.TotalLineCountToolStripStatusLabel, "TotalLineCountToolStripStatusLabel");
             this.TotalLineCountToolStripStatusLabel.Name = "TotalLineCountToolStripStatusLabel";
+            resources.ApplyResources(this.TotalLineCountToolStripStatusLabel, "TotalLineCountToolStripStatusLabel");
             // 
             // toolStripStatusLabel3
             // 
-            resources.ApplyResources(this.toolStripStatusLabel3, "toolStripStatusLabel3");
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            resources.ApplyResources(this.toolStripStatusLabel3, "toolStripStatusLabel3");
             // 
             // TargetLineCountToolStripStatusLabel
             // 
-            resources.ApplyResources(this.TargetLineCountToolStripStatusLabel, "TargetLineCountToolStripStatusLabel");
             this.TargetLineCountToolStripStatusLabel.Name = "TargetLineCountToolStripStatusLabel";
+            resources.ApplyResources(this.TargetLineCountToolStripStatusLabel, "TargetLineCountToolStripStatusLabel");
             // 
             // toolStripStatusLabel4
             // 
-            resources.ApplyResources(this.toolStripStatusLabel4, "toolStripStatusLabel4");
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            resources.ApplyResources(this.toolStripStatusLabel4, "toolStripStatusLabel4");
             // 
             // DisplayedRowNumStripStatusLabel
             // 
-            resources.ApplyResources(this.DisplayedRowNumStripStatusLabel, "DisplayedRowNumStripStatusLabel");
             this.DisplayedRowNumStripStatusLabel.Name = "DisplayedRowNumStripStatusLabel";
+            resources.ApplyResources(this.DisplayedRowNumStripStatusLabel, "DisplayedRowNumStripStatusLabel");
             // 
             // toolStripStatusLabel1
             // 
-            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
             // 
             // StartIndexStripStatusLabel
             // 
-            resources.ApplyResources(this.StartIndexStripStatusLabel, "StartIndexStripStatusLabel");
             this.StartIndexStripStatusLabel.Name = "StartIndexStripStatusLabel";
+            resources.ApplyResources(this.StartIndexStripStatusLabel, "StartIndexStripStatusLabel");
             // 
             // LogDataGridView
             // 
-            resources.ApplyResources(this.LogDataGridView, "LogDataGridView");
             this.LogDataGridView.AllowUserToAddRows = false;
             this.LogDataGridView.AllowUserToDeleteRows = false;
             this.LogDataGridView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.LogDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.LineNumColumn,
             this.MessageColumn});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.MediumBlue;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.LogDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.MediumBlue;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.LogDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.LogDataGridView, "LogDataGridView");
             this.LogDataGridView.GridColor = System.Drawing.SystemColors.ControlLight;
             this.LogDataGridView.Name = "LogDataGridView";
             this.LogDataGridView.ReadOnly = true;
             this.LogDataGridView.RowHeadersVisible = false;
             this.LogDataGridView.RowTemplate.Height = 21;
             this.LogDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.toolTip.SetToolTip(this.LogDataGridView, resources.GetString("LogDataGridView.ToolTip"));
             this.LogDataGridView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.LogDataGridView_CellPainting);
             this.LogDataGridView.Resize += new System.EventHandler(this.LogDataGridView_Resize);
             // 
@@ -506,7 +503,6 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "MainForm";
-            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

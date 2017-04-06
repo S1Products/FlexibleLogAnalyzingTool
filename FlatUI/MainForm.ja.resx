@@ -118,48 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="FileMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 22</value>
-  </data>
-  <data name="FileMenu.Text" xml:space="preserve">
-    <value>ファイル(&amp;F)</value>
-  </data>
-  <data name="SettingsMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="SettingsMenu.Text" xml:space="preserve">
-    <value>設定(&amp;N)</value>
-  </data>
-  <data name="MoveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 22</value>
-  </data>
-  <data name="MoveToolStripMenuItem.Text" xml:space="preserve">
-    <value>移動(&amp;M)</value>
-  </data>
-  <data name="HighlightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 22</value>
-  </data>
-  <data name="HighlightToolStripMenuItem.Text" xml:space="preserve">
-    <value>検索(&amp;S)</value>
-  </data>
-  <data name="FilteringToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 22</value>
-  </data>
-  <data name="FilteringToolStripMenuItem.Text" xml:space="preserve">
-    <value>フィルタ(&amp;I)</value>
-  </data>
-  <data name="ToolsMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 22</value>
-  </data>
-  <data name="ToolsMenu.Text" xml:space="preserve">
-    <value>ツール(&amp;T)</value>
-  </data>
-  <data name="helpMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 22</value>
-  </data>
-  <data name="helpMenu.Text" xml:space="preserve">
-    <value>ヘルプ(&amp;H)</value>
-  </data>
   <data name="AddNewProjectToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -336,6 +294,12 @@
   <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
     <value>終了(&amp;X)</value>
   </data>
+  <data name="FileMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 22</value>
+  </data>
+  <data name="FileMenu.Text" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
   <data name="ViewColumnSettingToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -412,6 +376,12 @@
   <data name="拡張機能設定XToolStripMenuItem.Text" xml:space="preserve">
     <value>プラグイン設定(&amp;P)</value>
   </data>
+  <data name="SettingsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="SettingsMenu.Text" xml:space="preserve">
+    <value>設定(&amp;N)</value>
+  </data>
   <data name="PreviousResultToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 22</value>
   </data>
@@ -444,6 +414,12 @@
   </data>
   <data name="MoveLineNumberToolStripMenuItem.Text" xml:space="preserve">
     <value>指定行へ移動(&amp;S)</value>
+  </data>
+  <data name="MoveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 22</value>
+  </data>
+  <data name="MoveToolStripMenuItem.Text" xml:space="preserve">
+    <value>移動(&amp;M)</value>
   </data>
   <data name="HighlightSettingToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -496,6 +472,12 @@
   <data name="JumpNextToolStripMenuItem.Text" xml:space="preserve">
     <value>次のハイライト(&amp;N)</value>
   </data>
+  <data name="HighlightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 22</value>
+  </data>
+  <data name="HighlightToolStripMenuItem.Text" xml:space="preserve">
+    <value>検索(&amp;S)</value>
+  </data>
   <data name="FilteringRangeSettingToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -529,6 +511,18 @@
   <data name="FilteringColumnSettingToolStripMenuItem.Text" xml:space="preserve">
     <value>カラム指定(&amp;C)</value>
   </data>
+  <data name="FilteringToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 22</value>
+  </data>
+  <data name="FilteringToolStripMenuItem.Text" xml:space="preserve">
+    <value>フィルタ(&amp;I)</value>
+  </data>
+  <data name="ToolsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 22</value>
+  </data>
+  <data name="ToolsMenu.Text" xml:space="preserve">
+    <value>ツール(&amp;T)</value>
+  </data>
   <data name="AboutToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -545,6 +539,12 @@
   <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
     <value>バージョン (&amp;A)</value>
   </data>
+  <data name="helpMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="helpMenu.Text" xml:space="preserve">
+    <value>ヘルプ(&amp;H)</value>
+  </data>
   <data name="toolStripStatusLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 18</value>
   </data>
@@ -552,7 +552,7 @@
     <value>状態:</value>
   </data>
   <data name="StatusMessageStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>622, 18</value>
+    <value>636, 18</value>
   </data>
   <data name="toolStripStatusLabel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 18</value>

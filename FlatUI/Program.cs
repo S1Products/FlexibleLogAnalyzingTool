@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Threading;
+using System.Globalization;
+
 namespace FlexibleLogAnalyzerTool
 {
     static class Program
@@ -16,6 +19,8 @@ namespace FlexibleLogAnalyzerTool
         [STAThread]
         static void Main(string[] args)
         {
+            SetLocale();
+
             if (args.Length == 0)
             {
                 Application.EnableVisualStyles();
@@ -35,6 +40,18 @@ namespace FlexibleLogAnalyzerTool
                 form.OpenProject(args[0]);
                 Application.Run(form);
             }
+        }
+
+        static void SetLocale()
+        {
+            string locale = Properties.Settings.Default.Locale;
+
+            if (locale == "")
+            {
+                return;
+            }
+
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(locale, false);
         }
 
         static void RegistExtensionToRegistry()

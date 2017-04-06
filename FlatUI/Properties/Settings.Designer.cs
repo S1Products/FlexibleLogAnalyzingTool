@@ -46,5 +46,17 @@ namespace FlexibleLogAnalyzerTool.Properties {
                 this["MaxLineCount"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Locale {
+            get {
+                return ((string)(this["Locale"]));
+            }
+            set {
+                this["Locale"] = value;
+            }
+        }
     }
 }
