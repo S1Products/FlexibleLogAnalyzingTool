@@ -1,22 +1,40 @@
 # FlexibleLogAnalyzingTool (FLAT)
 
-*様々な形式のログファイルを統一したフォーマットに変換し、ログを解析する為の各種機能を提供*
+*Convert various log files to unified log format. And it has some useful analyzing functions.*
 
-## 説明
-サーバやアプリケーションが出力する様々な形式のログファイルを解析し、統一のログ形式に変換します。
+## Getting Started
 
-また、ログの抽出や検索等、ログを解析する上で必要となる機能を提供します。
+プロダクトの開発やシステム開発を行っていると、様々な形式のログファイルを解析しなければならない事があります。  
+FlexibleLogAnalyzingTool (FLAT)は、それらサーバやアプリケーションが出力する様々な形式のログファイルを解析し、統一のログ形式に変換します。
+また、ログの抽出や検索、CSVやExcel形式でのエクスポート機能を有しており、フレキシブルにログを解析することが可能になります。
 
-## 主な機能
-* ログ形式の変換機能
-* 特定ログの抽出機能
-* キーワードのハイライト機能
-* ログのクリップボードへのコピー機能
-* ログ項目の非表示機能
-* 複数ログの結合機能
-等・・・
+当ツールの大きな特徴として、ログの抽出結果や検索結果を保存し、次回ツールを開いた際に以前開いた状態から復元することが可能になっています。
+これにより、「前にログを解析した時のキーワードが分からない・・・」「他の人が解析した結果と違う・・・」といった事を防ぐ事が可能です。
 
-## 特徴
-類似製品にMicrosoft製のLogParserが存在しますが、この製品は「より簡単に」かつ「よりフレキシブルに」を目指している製品です。
+### Prerequisites
 
-プログラミングを行うことなく様々なログファイルに対応し、特定行の抽出やハイライト表示、データの出力を行うことが可能です。
+当アプリケーションはWindows上で動作することを前提に作成されています。  
+また、アプリケーションの実行には[.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)以上が必須です。
+
+### Installing
+
+
+## Built With
+
+* [SQLite](https://www.sqlite.org/) - Internal database
+* [NPOI](https://npoi.codeplex.com/) - Export Excel function
+* [Application Icon](http://gentleface.com/free_icon_set.html) - Used to Application icons
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Miura Acoustic** - *Initial work* - [S1 Products](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
