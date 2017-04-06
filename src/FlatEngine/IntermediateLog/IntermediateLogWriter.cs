@@ -594,7 +594,7 @@ namespace FlatEngine.IntermediateLog
         /// </summary>
         /// <param name="elems">Parsed elements</param>
         /// <returns>Removed elements of empty strings</returns>
-        private string[] RemoveFirstAndLastEmptyElems(string[] elems)
+        public static string[] RemoveFirstAndLastEmptyElems(string[] elems)
         {
             List<string> elemList = new List<string>();
 

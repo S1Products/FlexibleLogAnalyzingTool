@@ -29,6 +29,8 @@ using System.Windows.Forms;
 
 using System.Text.RegularExpressions;
 
+using FlatEngine.IntermediateLog;
+
 namespace FlexibleLogAnalyzingTool
 {
     /// <summary>
@@ -93,6 +95,11 @@ namespace FlexibleLogAnalyzingTool
                 }
 
                 ResultListBox.Items.Add(csvline);
+            }
+
+            if (ResultListBox.Items.Count > 0)
+            {
+                ResultListBox.SelectedIndex = 0;
             }
         }
 
@@ -192,6 +199,25 @@ namespace FlexibleLogAnalyzingTool
             RegexTextbox.SelectionLength = 0;
             RegexTextbox.Enabled = true;
             RegexTextbox.Focus();
+        }
+
+        private void ResultListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Regex regex = new Regex(RegularExpression);
+
+            ParsedElementsListView.Items.Clear();
+            ElementCountLabel.Text = "";
+
+            string txt = SampleLogTextBox.Lines[ResultListBox.SelectedIndex];
+            string[] elems = regex.Split(txt);
+            elems = IntermediateLogWriter.RemoveFirstAndLastEmptyElems(elems);
+
+            foreach (string elem in elems)
+            {
+                ParsedElementsListView.Items.Add(elem);
+            }
+
+            ElementCountLabel.Text = elems.Length.ToString();
         }
     }
 }

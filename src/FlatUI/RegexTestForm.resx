@@ -123,12 +123,18 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Regular expression:</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>841, 490</value>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ParsedElementsListView.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;SampleLogTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DialogCancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="EvaluateButton.TabIndex" type="System.Int32, mscorlib">
@@ -146,42 +152,60 @@
   <data name="&gt;&gt;DialogCancelButton.Name" xml:space="preserve">
     <value>DialogCancelButton</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>RegexTestForm</value>
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ParsedElementsListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>633, 208</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Regular expression tester</value>
+  </data>
+  <data name="&gt;&gt;ElementCountLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Sample log:</value>
+  </data>
+  <data name="&gt;&gt;ParsedElementsListView.Name" xml:space="preserve">
+    <value>ParsedElementsListView</value>
+  </data>
   <data name="DialogCancelButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 33</value>
+  </data>
+  <data name="ParsedElementsListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 215</value>
   </data>
   <data name="&gt;&gt;SampleLogTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="ValueHeader.Width" type="System.Int32, mscorlib">
+    <value>192</value>
   </data>
   <data name="&gt;&gt;DialogOKButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="RegexTextbox.Text" xml:space="preserve">
     <value />
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="RegexTextbox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
-  <data name="RegexTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 24</value>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;DialogCancelButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="EvaluateButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -192,20 +216,29 @@
   <data name="&gt;&gt;EvaluateButton.Name" xml:space="preserve">
     <value>EvaluateButton</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 183</value>
+    <value>14, 193</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ElementCountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="RegexTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -217,7 +250,7 @@
     <value>2</value>
   </data>
   <data name="&gt;&gt;ResultListBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 12</value>
@@ -225,8 +258,8 @@
   <data name="&gt;&gt;DialogCancelButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RegexTextbox.Name" xml:space="preserve">
-    <value>RegexTextbox</value>
+  <data name="DialogOKButton.Text" xml:space="preserve">
+    <value>OK</value>
   </data>
   <data name="SampleLogTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -240,8 +273,20 @@
   <data name="SampleLogTextBox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;RegexTextbox.Name" xml:space="preserve">
+    <value>RegexTextbox</value>
+  </data>
+  <data name="&gt;&gt;ParsedElementsListView.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 193</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 12</value>
@@ -252,8 +297,20 @@
   <data name="RegexTextbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>732, 23</value>
   </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="EvaluateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
+  </data>
+  <data name="ValueHeader.Text" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Element count:</value>
   </data>
   <data name="&gt;&gt;SampleLogTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -262,13 +319,19 @@
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DialogOKButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>660, 445</value>
+    <value>660, 452</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 12</value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;RegexTextbox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="&gt;&gt;EvaluateButton.Parent" xml:space="preserve">
     <value>$this</value>
@@ -276,26 +339,53 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Result:</value>
   </data>
+  <data name="ElementCountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="&gt;&gt;ValueHeader.Name" xml:space="preserve">
+    <value>ValueHeader</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="DialogCancelButton.Text" xml:space="preserve">
     <value>Cancel</value>
+  </data>
+  <data name="ParsedElementsListView.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="DialogOKButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
   <data name="EvaluateButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>754, 24</value>
+  </data>
+  <data name="RegexTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 24</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;SampleLogTextBox.Name" xml:space="preserve">
     <value>SampleLogTextBox</value>
   </data>
-  <data name="DialogCancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="&gt;&gt;ElementCountLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;ElementCountLabel.Name" xml:space="preserve">
+    <value>ElementCountLabel</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -306,17 +396,35 @@
   <data name="RegexTextbox.Multiline" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="DialogOKButton.Text" xml:space="preserve">
-    <value>OK</value>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 12</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 431</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Parsed elements:</value>
+  </data>
+  <data name="&gt;&gt;ValueHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RegexTestForm</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 11</value>
   </data>
   <data name="&gt;&gt;EvaluateButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="SampleLogTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>813, 113</value>
@@ -324,8 +432,8 @@
   <data name="&gt;&gt;DialogOKButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Sample log:</value>
+  <data name="DialogCancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>754, 452</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -337,16 +445,22 @@
     <value>14, 51</value>
   </data>
   <data name="ResultListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>813, 238</value>
+    <value>609, 238</value>
+  </data>
+  <data name="&gt;&gt;ParsedElementsListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DialogOKButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 33</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 12</value>
   </data>
   <data name="&gt;&gt;DialogOKButton.Name" xml:space="preserve">
     <value>DialogOKButton</value>
   </data>
   <data name="ResultListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 198</value>
+    <value>16, 208</value>
   </data>
   <data name="&gt;&gt;RegexTextbox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -354,23 +468,29 @@
   <data name="&gt;&gt;ResultListBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Regular expression tester</value>
+  <data name="ParsedElementsListView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
   </data>
   <data name="SampleLogTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="DialogCancelButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>754, 445</value>
+  <data name="ElementCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 430</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ElementCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>841, 490</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ResultListBox.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

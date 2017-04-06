@@ -136,6 +136,21 @@
   <data name="EvaluateButton.Text" xml:space="preserve">
     <value>実行</value>
   </data>
+  <data name="ValueHeader.Text" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 12</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>要素数:</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 12</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>解析済み要素:</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>正規表現のテスト</value>
   </data>
