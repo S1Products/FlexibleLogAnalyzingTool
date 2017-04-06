@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Miura Acoustic")]
-[assembly: AssemblyProduct("FlexibleLogAnalyzerTool")]
+[assembly: AssemblyProduct("FlexibleLogAnalyzingTool")]
 [assembly: AssemblyCopyright("Copyright © 2017 Miura Acoustic")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

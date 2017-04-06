@@ -29,7 +29,7 @@ using System.Windows.Forms;
 
 using System.Text.RegularExpressions;
 
-namespace FlexibleLogAnalyzerTool
+namespace FlexibleLogAnalyzingTool
 {
     /// <summary>
     /// 

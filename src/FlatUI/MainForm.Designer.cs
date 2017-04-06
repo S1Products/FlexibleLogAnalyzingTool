@@ -1,4 +1,4 @@
-﻿namespace FlexibleLogAnalyzerTool
+﻿namespace FlexibleLogAnalyzingTool
 {
     partial class MainForm
     {
@@ -85,7 +85,7 @@
             this.LineNumColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MessageColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sampleLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sampleLogDataSet = new FlexibleLogAnalyzerTool.Dataset.SampleLogDataSet();
+            this.sampleLogDataSet = new FlexibleLogAnalyzingTool.Dataset.SampleLogDataSet();
             this.OpenProjectFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SaveProjectFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.SaveExportedLogFileDialog = new System.Windows.Forms.SaveFileDialog();

@@ -37,7 +37,7 @@ using FlatEngine;
 using FlatEngine.Export;
 using FlatEngine.IntermediateLog;
 
-namespace FlexibleLogAnalyzerTool
+namespace FlexibleLogAnalyzingTool
 {
     /// <summary>
     /// 
