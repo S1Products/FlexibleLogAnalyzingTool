@@ -1,4 +1,4 @@
-# FlexibleLogAnalyzer (FLAT)
+# FlexibleLogAnalyzingTool (FLAT)
 
 *様々な形式のログファイルを統一したフォーマットに変換し、ログを解析する為の各種機能を提供*
 
