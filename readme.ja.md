@@ -14,23 +14,9 @@ FlexibleLogAnalyzingTool (FLAT)は、それらサーバやアプリケーショ�
 当アプリケーションはWindows上で動作することを前提に作成されています。  
 また、アプリケーションの実行には[.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)以上が必須です。
 
-### Installing
+### インストール方法
 
-A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## 使用ライブラリ
 
