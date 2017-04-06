@@ -288,6 +288,9 @@
     <EmbeddedResource Include="NewProjectSettingDialog.resx">
       <DependentUpon>NewProjectSettingDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PatternSettingDialog.ja.resx">
+      <DependentUpon>PatternSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -298,11 +301,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegexTestForm.ja.resx">
+      <DependentUpon>RegexTestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegexTestForm.resx">
       <DependentUpon>RegexTestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatternSettingDialog.resx">
       <DependentUpon>PatternSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewColumnSettingDialog.ja.resx">
+      <DependentUpon>ViewColumnSettingDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewColumnSettingDialog.resx">
       <DependentUpon>ViewColumnSettingDialog.cs</DependentUpon>

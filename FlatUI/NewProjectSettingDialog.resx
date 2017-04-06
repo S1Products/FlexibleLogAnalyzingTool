@@ -131,17 +131,14 @@
   <data name="&gt;&gt;OpenLogFileDialog.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="OpenFileButton.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -197,9 +194,6 @@
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="DialogCancelButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>429, 295</value>
-  </data>
   <data name="&gt;&gt;LogTitleLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -208,9 +202,6 @@
   </data>
   <data name="&gt;&gt;ProjectNameTextbox.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="FileRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 16</value>
@@ -270,8 +261,8 @@
   <data name="&gt;&gt;Regex.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="DialogCancelButton.Text" xml:space="preserve">
     <value>Cancel</value>
@@ -291,9 +282,6 @@
   <data name="&gt;&gt;PatternListView.Name" xml:space="preserve">
     <value>PatternListView</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>&amp;Character set:</value>
-  </data>
   <data name="DialogCancelButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -309,6 +297,9 @@
   <data name="PatternNameHeader.Text" xml:space="preserve">
     <value>Pattern name</value>
   </data>
+  <data name="PatternListView.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;DialogOKButton.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
@@ -321,8 +312,8 @@
   <data name="OpenFileButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>385, 35</value>
   </data>
-  <data name="&gt;&gt;FileRadioButton.Name" xml:space="preserve">
-    <value>FileRadioButton</value>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;ProjectNameTextbox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -338,6 +329,9 @@
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="FilteringRangeButton.Text" xml:space="preserve">
+    <value>Range filter</value>
   </data>
   <data name="EncodingCombobox.Items1" xml:space="preserve">
     <value>Shift_JIS</value>
@@ -369,12 +363,15 @@
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;LogTitleLabel.Name" xml:space="preserve">
+    <value>LogTitleLabel</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="Regex.Width" type="System.Int32, mscorlib">
+    <value>305</value>
   </data>
   <data name="&gt;&gt;LogFileTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -394,14 +391,14 @@
   <data name="FileRadioButton.Text" xml:space="preserve">
     <value>Per file</value>
   </data>
-  <data name="&gt;&gt;FilteringRangeButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="FilteringColumnButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 23</value>
   </data>
   <data name="EncodingCombobox.Location" type="System.Drawing.Point, System.Drawing">
     <value>417, 37</value>
+  </data>
+  <data name="&gt;&gt;FileRadioButton.Name" xml:space="preserve">
+    <value>FileRadioButton</value>
   </data>
   <data name="&gt;&gt;EncodingCombobox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -421,9 +418,6 @@
   <data name="ProjectNameTextbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 24</value>
   </data>
-  <data name="EncodingCombobox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
   <data name="&gt;&gt;FolderRadioButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -435,6 +429,9 @@
   </data>
   <data name="DialogOKButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 35</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 9</value>
@@ -499,6 +496,9 @@
   <data name="LogTitleLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;DialogCancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;FilteringRangeButton.Name" xml:space="preserve">
     <value>FilteringRangeButton</value>
   </data>
@@ -514,6 +514,9 @@
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 49</value>
   </data>
+  <data name="&gt;&gt;DialogCancelButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="LogTitleLabel.Text" xml:space="preserve">
     <value>&amp;Log file name:</value>
   </data>
@@ -522,9 +525,6 @@
   </data>
   <data name="&gt;&gt;FilteringColumnButton.Name" xml:space="preserve">
     <value>FilteringColumnButton</value>
-  </data>
-  <data name="&gt;&gt;DialogOKButton.Name" xml:space="preserve">
-    <value>DialogOKButton</value>
   </data>
   <data name="FilteringRangeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 23</value>
@@ -538,8 +538,8 @@
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Regex.Width" type="System.Int32, mscorlib">
-    <value>305</value>
+  <data name="DialogCancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 295</value>
   </data>
   <data name="LogTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 21</value>
@@ -571,8 +571,8 @@
   <data name="&gt;&gt;DialogOKButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DialogCancelButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;FilteringRangeButton.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 60</value>
@@ -622,14 +622,14 @@
   <data name="FolderRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 16</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 12</value>
+  <data name="EncodingCombobox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>510, 66</value>
   </data>
-  <data name="&gt;&gt;LogTitleLabel.Name" xml:space="preserve">
-    <value>LogTitleLabel</value>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Filtering setting:</value>
@@ -640,18 +640,15 @@
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="FilteringRangeButton.Text" xml:space="preserve">
-    <value>Range filter</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>&amp;Character set:</value>
   </data>
-  <data name="PatternListView.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DialogCancelButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;DialogOKButton.Name" xml:space="preserve">
+    <value>DialogOKButton</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ja</value>
-  </metadata>
   <metadata name="LogFolderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>180, 17</value>
   </metadata>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegexTestForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SampleLogTextBox = new System.Windows.Forms.TextBox();
@@ -41,108 +42,66 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 11);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "正規表現:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 51);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "サンプルログ:";
             // 
             // SampleLogTextBox
             // 
             this.SampleLogTextBox.AcceptsReturn = true;
-            this.SampleLogTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SampleLogTextBox.Location = new System.Drawing.Point(16, 66);
-            this.SampleLogTextBox.Multiline = true;
+            resources.ApplyResources(this.SampleLogTextBox, "SampleLogTextBox");
             this.SampleLogTextBox.Name = "SampleLogTextBox";
-            this.SampleLogTextBox.Size = new System.Drawing.Size(813, 113);
-            this.SampleLogTextBox.TabIndex = 3;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 183);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 12);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "データ表示:";
             // 
             // DialogOKButton
             // 
-            this.DialogOKButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.DialogOKButton, "DialogOKButton");
             this.DialogOKButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.DialogOKButton.Location = new System.Drawing.Point(660, 445);
             this.DialogOKButton.Name = "DialogOKButton";
-            this.DialogOKButton.Size = new System.Drawing.Size(75, 33);
-            this.DialogOKButton.TabIndex = 6;
-            this.DialogOKButton.Text = "OK";
             this.DialogOKButton.UseVisualStyleBackColor = true;
             // 
             // DialogCancelButton
             // 
-            this.DialogCancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.DialogCancelButton, "DialogCancelButton");
             this.DialogCancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.DialogCancelButton.Location = new System.Drawing.Point(754, 445);
             this.DialogCancelButton.Name = "DialogCancelButton";
-            this.DialogCancelButton.Size = new System.Drawing.Size(75, 33);
-            this.DialogCancelButton.TabIndex = 7;
-            this.DialogCancelButton.Text = "Cancel";
             this.DialogCancelButton.UseVisualStyleBackColor = true;
             // 
             // ResultListBox
             // 
-            this.ResultListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.ResultListBox, "ResultListBox");
             this.ResultListBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.ResultListBox.FormattingEnabled = true;
-            this.ResultListBox.Location = new System.Drawing.Point(16, 198);
             this.ResultListBox.Name = "ResultListBox";
-            this.ResultListBox.Size = new System.Drawing.Size(813, 238);
-            this.ResultListBox.TabIndex = 8;
             this.ResultListBox.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.ResultListBox_DrawItem);
             // 
             // EvaluateButton
             // 
-            this.EvaluateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.EvaluateButton.Location = new System.Drawing.Point(754, 24);
+            resources.ApplyResources(this.EvaluateButton, "EvaluateButton");
             this.EvaluateButton.Name = "EvaluateButton";
-            this.EvaluateButton.Size = new System.Drawing.Size(75, 23);
-            this.EvaluateButton.TabIndex = 9;
-            this.EvaluateButton.Text = "実行";
             this.EvaluateButton.UseVisualStyleBackColor = true;
             this.EvaluateButton.Click += new System.EventHandler(this.EvaluateButton_Click);
             // 
             // RegexTextbox
             // 
-            this.RegexTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RegexTextbox.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.RegexTextbox.Location = new System.Drawing.Point(16, 24);
-            this.RegexTextbox.Multiline = false;
+            resources.ApplyResources(this.RegexTextbox, "RegexTextbox");
             this.RegexTextbox.Name = "RegexTextbox";
-            this.RegexTextbox.Size = new System.Drawing.Size(732, 23);
-            this.RegexTextbox.TabIndex = 10;
-            this.RegexTextbox.Text = "";
             this.RegexTextbox.TextChanged += new System.EventHandler(this.RegexTextbox_TextChanged);
             // 
             // RegexTestForm
             // 
             this.AcceptButton = this.DialogOKButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.DialogCancelButton;
-            this.ClientSize = new System.Drawing.Size(841, 490);
             this.Controls.Add(this.RegexTextbox);
             this.Controls.Add(this.EvaluateButton);
             this.Controls.Add(this.ResultListBox);
@@ -156,8 +115,6 @@
             this.Name = "RegexTestForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "正規表現テスト";
             this.ResumeLayout(false);
             this.PerformLayout();
 
