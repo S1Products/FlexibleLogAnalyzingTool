@@ -30,9 +30,9 @@ FlexibleLogAnalyzingTool (FLAT)は、それらサーバやアプリケーショ�
 
 ## 著者
 
-* **Miura Acoustic** - *Initial work* - [S1 Products Home page](http://s1products.info)
+* **Miura Acoustic** - *初期バージョンの開発者* - [S1 Products Home page](http://s1products.info)
 
-その他のコントリビュータを参照する場合は、[contributors](https://github.com/S1Products/FlexibleLogAnalyzingTool/contributors)を参照してください。
+その他のコントリビュータを参照する場合は、[コントリビュータ](https://github.com/S1Products/FlexibleLogAnalyzingTool/contributors)を参照してください。
 
 ## ライセンス
 
