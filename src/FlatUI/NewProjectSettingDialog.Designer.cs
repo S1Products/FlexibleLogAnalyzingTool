@@ -1,4 +1,4 @@
-﻿namespace FlexibleLogAnalyzerTool
+﻿namespace FlexibleLogAnalyzingTool
 {
     partial class NewProjectSettingDialog
     {

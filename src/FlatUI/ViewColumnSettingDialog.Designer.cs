@@ -1,4 +1,4 @@
-﻿namespace FlexibleLogAnalyzerTool
+﻿namespace FlexibleLogAnalyzingTool
 {
     partial class ViewColumnSettingDialog
     {
@@ -74,7 +74,7 @@
             // OrderDownButton
             // 
             resources.ApplyResources(this.OrderDownButton, "OrderDownButton");
-            this.OrderDownButton.Image = global::FlexibleLogAnalyzerTool.Properties.Resources.arrow_bottom_icon_24;
+            this.OrderDownButton.Image = global::FlexibleLogAnalyzingTool.Properties.Resources.arrow_bottom_icon_24;
             this.OrderDownButton.Name = "OrderDownButton";
             this.OrderDownButton.UseVisualStyleBackColor = true;
             this.OrderDownButton.Click += new System.EventHandler(this.OrderDownButton_Click);
@@ -82,7 +82,7 @@
             // OrderUpButton
             // 
             resources.ApplyResources(this.OrderUpButton, "OrderUpButton");
-            this.OrderUpButton.Image = global::FlexibleLogAnalyzerTool.Properties.Resources.arrow_top_icon_24;
+            this.OrderUpButton.Image = global::FlexibleLogAnalyzingTool.Properties.Resources.arrow_top_icon_24;
             this.OrderUpButton.Name = "OrderUpButton";
             this.OrderUpButton.UseVisualStyleBackColor = true;
             this.OrderUpButton.Click += new System.EventHandler(this.OrderUpButton_Click);

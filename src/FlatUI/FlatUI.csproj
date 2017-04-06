@@ -7,8 +7,8 @@
     <ProjectGuid>{7D2B5D34-5326-470B-861D-4511D888B0CE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FlexibleLogAnalyzerTool</RootNamespace>
-    <AssemblyName>FlexibleLogAnalyzerTool</AssemblyName>
+    <RootNamespace>FlexibleLogAnalyzingTool</RootNamespace>
+    <AssemblyName>FlexibleLogAnalyzingTool</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>

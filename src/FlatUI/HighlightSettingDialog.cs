@@ -29,7 +29,7 @@ using System.Windows.Forms;
 
 using FlatEngine;
 
-namespace FlexibleLogAnalyzerTool
+namespace FlexibleLogAnalyzingTool
 {
     /// <summary>
     /// 

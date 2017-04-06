@@ -28,7 +28,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 using FlatEngine;
 
-namespace FlexibleLogAnalyzerTool
+namespace FlexibleLogAnalyzingTool
 {
     /// <summary>
     /// 

@@ -30,7 +30,7 @@ using System.Windows.Forms;
 using FlatEngine;
 using FlatEngine.IntermediateLog;
 
-namespace FlexibleLogAnalyzerTool
+namespace FlexibleLogAnalyzingTool
 {
     /// <summary>
     /// 
