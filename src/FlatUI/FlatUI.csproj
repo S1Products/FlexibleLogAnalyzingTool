@@ -351,7 +351,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ReleaseNote.txt" />
     <None Include="icons\cogs_icon&amp;16.png" />
     <None Include="icons\lighting_icon&amp;16.png" />
     <None Include="icons\app_window_icon&amp;16.png" />

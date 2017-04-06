@@ -29,6 +29,10 @@ using log4net;
 
 namespace FlatEngine
 {
+    /// <summary>
+    /// Log utility
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public class Log
     {
         private const int DEFAULT_CALLER_FRAME_INDEX = 1;

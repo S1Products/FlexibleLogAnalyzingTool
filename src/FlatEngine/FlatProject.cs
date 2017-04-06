@@ -27,6 +27,10 @@ using FlatEngine.IntermediateLog;
 
 namespace FlatEngine
 {
+    /// <summary>
+    /// Hold project settings
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     [Serializable]
     public class FlatProject
     {

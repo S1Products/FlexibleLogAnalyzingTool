@@ -26,6 +26,10 @@ using System.IO;
 
 namespace FlatEngine.Export
 {
+    /// <summary>
+    /// Export log messages to CSV
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public class CSVLogExporter : LogExporter
     {
         public const string DEFAULT_DELIMITER = ",";

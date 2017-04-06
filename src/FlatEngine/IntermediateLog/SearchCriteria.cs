@@ -27,6 +27,11 @@ using System.Data.SQLite;
 
 namespace FlatEngine.IntermediateLog
 {
+    /// <summary>
+    /// Search criteria.
+    /// This class has search criterion list.
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     [Serializable]
     public class SearchCriteria
     {

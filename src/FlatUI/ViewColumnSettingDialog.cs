@@ -31,6 +31,10 @@ using FlatEngine;
 
 namespace FlexibleLogAnalyzerTool
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public partial class ViewColumnSettingDialog : Form
     {
         private ColumnDefinitionList columnDefList;

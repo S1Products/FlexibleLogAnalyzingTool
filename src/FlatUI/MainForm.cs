@@ -39,6 +39,10 @@ using FlatEngine.IntermediateLog;
 
 namespace FlexibleLogAnalyzerTool
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public partial class MainForm : Form
     {
         private Log log = new Log(MethodBase.GetCurrentMethod().DeclaringType);

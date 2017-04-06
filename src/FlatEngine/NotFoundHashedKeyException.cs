@@ -25,6 +25,10 @@ using System.Threading.Tasks;
 
 namespace FlatEngine
 {
+    /// <summary>
+    /// Exception of "not found hashed key"
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public class NotFoundHashedKeyException : Exception
     { 
         /// <summary>

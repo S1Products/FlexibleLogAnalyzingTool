@@ -31,6 +31,10 @@ using FlatEngine;
 
 namespace FlexibleLogAnalyzerTool
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public partial class PatternSettingDialog : Form
     {
         public const int COL_INDEX_COLUMN_NAME = 0;

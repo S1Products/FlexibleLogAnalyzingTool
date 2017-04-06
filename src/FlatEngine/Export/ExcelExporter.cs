@@ -30,6 +30,10 @@ using NPOI.XSSF.UserModel;
 
 namespace FlatEngine.Export
 {
+    /// <summary>
+    /// Export log messages to Excel
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public class ExcelLogExporter : LogExporter
     {
         #region "Constants"

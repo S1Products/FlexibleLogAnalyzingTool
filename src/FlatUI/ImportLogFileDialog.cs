@@ -29,6 +29,10 @@ using System.Windows.Forms;
 
 namespace FlexibleLogAnalyzerTool
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public partial class ImportLogFileDialog : Form
     {
         public ImportLogFileDialog()

@@ -25,6 +25,10 @@ using System.Threading.Tasks;
 
 namespace FlatEngine.IntermediateLog
 {
+    /// <summary>
+    /// Constant values for Intermediate log access
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public class IntermediateLogConstants
     {
         #region "Hashed values table"

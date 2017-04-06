@@ -25,6 +25,10 @@ using System.Threading.Tasks;
 
 namespace FlatEngine.Export
 {
+    /// <summary>
+    /// Log messages exporter abstract class
+    /// </summary>
+    /// <author>Miura Acoustic</author>
     public abstract class LogExporter : IDisposable
     {
         /// <summary>

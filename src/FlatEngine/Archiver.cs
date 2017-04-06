@@ -31,6 +31,7 @@ namespace FlatEngine
     /// <summary>
     /// Zip archiver to project items.
     /// </summary>
+    /// <author>Miura Acoustic</author>
     public class Archiver
     {
         private static Log log = new Log(MethodBase.GetCurrentMethod().DeclaringType);
