@@ -117,69 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lighting_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\lighting_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clipboard_copy_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\clipboard_copy_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_top_icon&amp;32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\arrow_top_icon&amp;32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="export_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\export_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_two_head_2_vertical_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\arrow_two_head_2_vertical_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3x3_grid_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\3x3_grid_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="print_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\print_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cogs_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\cogs_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\save_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_top_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\arrow_top_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_top_icon&amp;24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\arrow_top_icon&amp;24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="on-off_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\on-off_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lightbulb_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\lightbulb_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="app_window_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\app_window_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="filter_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\filter_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="doc_new_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\doc_new_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="folder_open_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\folder_open_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_bottom_icon&amp;24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\arrow_bottom_icon&amp;24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_bottom_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\arrow_bottom_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sq_plus_icon&amp;16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\sq_plus_icon&amp;16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ApplicationTitle" xml:space="preserve">
-    <value>"FLAT (Project name: "</value>
+    <value>"FLAT (プロジェクト名: "</value>
   </data>
   <data name="ColumnTitleFileName" xml:space="preserve">
     <value>File</value>
@@ -188,132 +127,132 @@
     <value>Line</value>
   </data>
   <data name="ColumnTitleMessage" xml:space="preserve">
-    <value>Message</value>
+    <value>メッセージ</value>
   </data>
   <data name="DefaultFontName" xml:space="preserve">
-    <value>Courier New</value>
+    <value>ＭＳ ゴシック</value>
   </data>
   <data name="DialogTitleWarning" xml:space="preserve">
-    <value>Warning</value>
+    <value>警告</value>
   </data>
   <data name="LabelFileName" xml:space="preserve">
-    <value>&amp;File name</value>
+    <value>ファイル名(&amp;F)</value>
   </data>
   <data name="LabelFolderName" xml:space="preserve">
-    <value>&amp;Folder name</value>
+    <value>フォルダ名(&amp;F)</value>
   </data>
   <data name="MessageAnalyzingLog" xml:space="preserve">
-    <value>Analyzing log file... File name: </value>
+    <value>ログを解析中です... ファイル名: </value>
   </data>
   <data name="MessageChoosePattern" xml:space="preserve">
-    <value>Please choose analyzing pattern.</value>
+    <value>パターンを選択してください。</value>
   </data>
   <data name="MessageElapsedSecUnit" xml:space="preserve">
-    <value>sec</value>
+    <value>秒</value>
   </data>
   <data name="MessageFinishedAnalyzingLog" xml:space="preserve">
-    <value>Analyze log finished. (Elapsed: </value>
+    <value>ログの解析が終了しました。(経過時間: </value>
   </data>
   <data name="MessageLineNumber" xml:space="preserve">
-    <value>Row number</value>
+    <value>行番号</value>
   </data>
   <data name="MessageLogDisplayed" xml:space="preserve">
-    <value>Log displayed.</value>
+    <value>ログを表示しました。</value>
   </data>
   <data name="MessageMovedRow" xml:space="preserve">
-    <value>Moved specified row.</value>
+    <value>指定行に移動しました。</value>
   </data>
   <data name="MessageMoveFirstRow" xml:space="preserve">
-    <value>Moved first row.</value>
+    <value>先頭行に移動しました。</value>
   </data>
   <data name="MessageMoveLastRow" xml:space="preserve">
-    <value>Moved last row.</value>
+    <value>最終行に移動しました。</value>
   </data>
   <data name="MessageProjectFileSaved" xml:space="preserve">
-    <value>Project file saved.</value>
+    <value>プロジェクトファイルを保存しました。</value>
   </data>
   <data name="MessageProjectName" xml:space="preserve">
-    <value>Project name:</value>
+    <value>プロジェクト名:</value>
   </data>
   <data name="MessageRegisteredExtension" xml:space="preserve">
-    <value>Registered FLAT file extension.</value>
+    <value>拡張子を登録しました。</value>
   </data>
   <data name="MessageSaveSetting" xml:space="preserve">
-    <value>Saved settings.</value>
+    <value>設定を保存しました。</value>
   </data>
   <data name="MessageSpecifyRowNumber" xml:space="preserve">
-    <value>Please specify row number.</value>
+    <value>行番号を入力してください。</value>
   </data>
   <data name="NotDefinedKeyword" xml:space="preserve">
-    <value>Please specify keyword</value>
+    <value>キーワードを指定してください。</value>
   </data>
   <data name="WarnCouldNotCreateProjectFile" xml:space="preserve">
-    <value>Could not create new project file.</value>
+    <value>新しいプロジェクトを作成できませんでした。</value>
   </data>
   <data name="WarnCouldNotDisplayColumnSetting" xml:space="preserve">
-    <value>An error occurred column setting view.</value>
+    <value>カラム設定表示中にエラーが発生しました。</value>
   </data>
   <data name="WarnCouldNotExitApp" xml:space="preserve">
-    <value>Could not exit application.</value>
+    <value>アプリケーションを終了できませんでした。</value>
   </data>
   <data name="WarnCouldNotExportLog" xml:space="preserve">
-    <value>Could not export log file.</value>
+    <value>ログをエクスポートできませんでした。</value>
   </data>
   <data name="WarnCouldNotImportLog" xml:space="preserve">
-    <value>Could not import log file.</value>
+    <value>ログをインポートできませんでした。</value>
   </data>
   <data name="WarnCouldNotOpenProject" xml:space="preserve">
-    <value>Could not open project file.</value>
+    <value>プロジェクトファイルを開けませんでした。</value>
   </data>
   <data name="WarnCouldNotPrintLog" xml:space="preserve">
-    <value>Could not print log file.</value>
+    <value>ログを印刷できませんでした。</value>
   </data>
   <data name="WarnCouldNotSaveProjectFile" xml:space="preserve">
-    <value>Could not save project file.</value>
+    <value>プロジェクトを保存できませんでした。</value>
   </data>
   <data name="WarnDidNotSpecifiedLogFile" xml:space="preserve">
-    <value>Please specify log file.</value>
+    <value>ログファイル名を指定してください。</value>
   </data>
   <data name="WarnErrorAnalyzingPattern" xml:space="preserve">
-    <value>An error occurred analyzing pattern setting view.</value>
+    <value>解析パターン設定表示中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorApplicationSetting" xml:space="preserve">
-    <value>An error occurred application setting view.</value>
+    <value>アプリケーション設定表示中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorDisplayFilteringColumn" xml:space="preserve">
-    <value>An error occurred column filter setting view.</value>
+    <value>カラム指定表示中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorDisplayFilteringRange" xml:space="preserve">
-    <value>An error occurred range filter setting view.</value>
+    <value>範囲設定表示中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorDisplayHelp" xml:space="preserve">
-    <value>An error occurred help.</value>
+    <value>ヘルプ表示中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorDisplayLog" xml:space="preserve">
-    <value>An error occurred displaying log data.</value>
+    <value>ログデータ表示中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorHighlightSetting" xml:space="preserve">
-    <value>An error occurred highlight setting view.</value>
+    <value>ハイライト設定表示中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorJumpHighlightRow" xml:space="preserve">
-    <value>An error occurred jump row.</value>
+    <value>ハイライトへのジャンプ中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorMoveFirstRow" xml:space="preserve">
-    <value>An error occurred move first row.</value>
+    <value>先頭行へ移動中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorMoveLastRow" xml:space="preserve">
-    <value>An error occurred move last row.</value>
+    <value>最終行へ移動中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorMoveSpecifiedRow" xml:space="preserve">
-    <value>An error occurred move specified row.</value>
+    <value>指定行へ移動中にエラーが発生しました。</value>
   </data>
   <data name="WarnErrorNotRegisteredExtension" xml:space="preserve">
-    <value>Could not register Flat file extension.</value>
+    <value>拡張子を登録できませんでした。</value>
   </data>
   <data name="WarnNotFoundJumpableRow" xml:space="preserve">
-    <value>Could not find jumpable row.</value>
+    <value>ジャンプ可能な行が見つかりませんでした</value>
   </data>
   <data name="WarnNotFoundLogLines" xml:space="preserve">
-    <value>This operation is invalid because not found log data.</value>
+    <value>ログが存在しない状態では無効です。</value>
   </data>
 </root>

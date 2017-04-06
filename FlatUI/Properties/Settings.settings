@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="DateTimeFormat" Type="System.String" Scope="User">
-      <Value Profile="(Default)">MM/dd HH:mm:ss.fff</Value>
+      <Value Profile="(Default)">yyyy/MM/dd HH:mm:ss.fff</Value>
     </Setting>
     <Setting Name="MaxLineCount" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10000</Value>

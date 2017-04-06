@@ -135,7 +135,8 @@ namespace FlexibleLogAnalyzerTool
 
             if (KeywordTextbox.Text == "")
             {
-                MessageBox.Show("キーワードを入力してください。", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(Properties.Resources.NotDefinedKeyword, 
+                    Properties.Resources.DialogTitleWarning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

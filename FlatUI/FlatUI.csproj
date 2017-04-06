@@ -310,6 +310,7 @@
     <EmbeddedResource Include="PatternSettingDialog.resx">
       <DependentUpon>PatternSettingDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja.resx" />
     <EmbeddedResource Include="ViewColumnSettingDialog.ja.resx">
       <DependentUpon>ViewColumnSettingDialog.cs</DependentUpon>
     </EmbeddedResource>

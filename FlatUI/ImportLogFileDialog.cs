@@ -75,12 +75,12 @@ namespace FlexibleLogAnalyzerTool
         {
             if (FileRadioButton.Checked)
             {
-                LogTitleLabel.Text = "ログファイル名(&F):";
+                LogTitleLabel.Text = Properties.Resources.LabelFileName;
                 FilePatternTextBox.Enabled = false;
             }
             else
             {
-                LogTitleLabel.Text = "フォルダ名(&F):";
+                LogTitleLabel.Text = Properties.Resources.LabelFolderName;
                 FilePatternTextBox.Enabled = true;
             }
         }

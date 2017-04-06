@@ -152,7 +152,7 @@ namespace FlexibleLogAnalyzerTool
                 long.TryParse(criterion.Value, out value);
 
                 DateTime dateTime = new DateTime(value);
-                row.Cells[VALUE_INDEX].Value = dateTime.ToString("yyyy/MM/dd HH:mm:ss.fff");
+                row.Cells[VALUE_INDEX].Value = dateTime.ToString(Properties.Settings.Default.DateTimeFormat);
             }
             else
             {
@@ -230,9 +230,9 @@ namespace FlexibleLogAnalyzerTool
 
         }
 
-        #region "イベント処理"
+        #region "Events"
 
-        #region "カラム一覧の選択"
+        #region "Select column list"
 
         private void ColumnListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -246,9 +246,9 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "検索条件の処理"
+        #region "Search conditions data grid"
 
-        #region "検索条件の追加"
+        #region "Add"
 
         private void SearchCriteriaDataGridView_UserAddedRow(object sender, DataGridViewRowEventArgs e)
         {
@@ -272,7 +272,7 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "検索条件の更新"
+        #region "Update"
 
         private void SearchCriteriaDataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
@@ -306,7 +306,7 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "検索条件の削除"
+        #region "Delete"
 
         private void SearchCriteriaDataGridView_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
         {

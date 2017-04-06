@@ -71,7 +71,7 @@ namespace FlexibleLogAnalyzerTool
         public NewProjectSettingDialog()
         {
             InitializeComponent();
-            defaultPattern.ColumnDefinitionList[0].ColumnName = "メッセージ";
+            defaultPattern.ColumnDefinitionList[0].ColumnName = Properties.Resources.ColumnTitleMessage;
         }
 
         private void OpenFileButton_Click(object sender, EventArgs e)
@@ -124,7 +124,6 @@ namespace FlexibleLogAnalyzerTool
             }
             else
             {
-                // ListBoxの先頭は既定値のため、ListBoxの選択された行を-1する
                 this.SelectedPattern = PatternList[PatternListView.SelectedIndices[0] - 1];
             }
         }
@@ -133,12 +132,12 @@ namespace FlexibleLogAnalyzerTool
         {
             if (FileRadioButton.Checked)
             {
-                LogTitleLabel.Text = "ログファイル名(&F):";
+                LogTitleLabel.Text = Properties.Resources.LabelFileName;
                 FilePatternTextBox.Enabled = false;
             }
             else
             {
-                LogTitleLabel.Text = "フォルダ名(&F):";
+                LogTitleLabel.Text = Properties.Resources.LabelFolderName;
                 FilePatternTextBox.Enabled = true;
             }
         }

@@ -81,6 +81,15 @@ namespace FlexibleLogAnalyzerTool.Properties {
         }
         
         /// <summary>
+        ///   &quot;FLAT (Project name: &quot; に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ApplicationTitle {
+            get {
+                return ResourceManager.GetString("ApplicationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
         internal static System.Drawing.Bitmap arrow_bottom_icon_16 {
@@ -161,6 +170,51 @@ namespace FlexibleLogAnalyzerTool.Properties {
         }
         
         /// <summary>
+        ///   File に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ColumnTitleFileName {
+            get {
+                return ResourceManager.GetString("ColumnTitleFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Line に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ColumnTitleLineNumber {
+            get {
+                return ResourceManager.GetString("ColumnTitleLineNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Message に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ColumnTitleMessage {
+            get {
+                return ResourceManager.GetString("ColumnTitleMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Courier New に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DefaultFontName {
+            get {
+                return ResourceManager.GetString("DefaultFontName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Warning に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DialogTitleWarning {
+            get {
+                return ResourceManager.GetString("DialogTitleWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
         internal static System.Drawing.Bitmap doc_new_icon_16 {
@@ -201,6 +255,24 @@ namespace FlexibleLogAnalyzerTool.Properties {
         }
         
         /// <summary>
+        ///   &amp;File name に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string LabelFileName {
+            get {
+                return ResourceManager.GetString("LabelFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   &amp;Folder name に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string LabelFolderName {
+            get {
+                return ResourceManager.GetString("LabelFolderName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
         internal static System.Drawing.Bitmap lightbulb_icon_16 {
@@ -217,6 +289,141 @@ namespace FlexibleLogAnalyzerTool.Properties {
             get {
                 object obj = ResourceManager.GetObject("lighting_icon&16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Analyzing log file... File name:  に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageAnalyzingLog {
+            get {
+                return ResourceManager.GetString("MessageAnalyzingLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Please choose analyzing pattern. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageChoosePattern {
+            get {
+                return ResourceManager.GetString("MessageChoosePattern", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   sec に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageElapsedSecUnit {
+            get {
+                return ResourceManager.GetString("MessageElapsedSecUnit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Analyze log finished. (Elapsed:  に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageFinishedAnalyzingLog {
+            get {
+                return ResourceManager.GetString("MessageFinishedAnalyzingLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Row number に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageLineNumber {
+            get {
+                return ResourceManager.GetString("MessageLineNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Log displayed. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageLogDisplayed {
+            get {
+                return ResourceManager.GetString("MessageLogDisplayed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Moved specified row. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageMovedRow {
+            get {
+                return ResourceManager.GetString("MessageMovedRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Moved first row. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageMoveFirstRow {
+            get {
+                return ResourceManager.GetString("MessageMoveFirstRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Moved last row. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageMoveLastRow {
+            get {
+                return ResourceManager.GetString("MessageMoveLastRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Project file saved. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageProjectFileSaved {
+            get {
+                return ResourceManager.GetString("MessageProjectFileSaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Project name: に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageProjectName {
+            get {
+                return ResourceManager.GetString("MessageProjectName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Registered FLAT file extension. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageRegisteredExtension {
+            get {
+                return ResourceManager.GetString("MessageRegisteredExtension", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Saved settings. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageSaveSetting {
+            get {
+                return ResourceManager.GetString("MessageSaveSetting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Please specify row number. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string MessageSpecifyRowNumber {
+            get {
+                return ResourceManager.GetString("MessageSpecifyRowNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Please specify keyword に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string NotDefinedKeyword {
+            get {
+                return ResourceManager.GetString("NotDefinedKeyword", resourceCulture);
             }
         }
         
@@ -257,6 +464,213 @@ namespace FlexibleLogAnalyzerTool.Properties {
             get {
                 object obj = ResourceManager.GetObject("sq_plus_icon&16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Could not create new project file. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnCouldNotCreateProjectFile {
+            get {
+                return ResourceManager.GetString("WarnCouldNotCreateProjectFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred column setting view. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnCouldNotDisplayColumnSetting {
+            get {
+                return ResourceManager.GetString("WarnCouldNotDisplayColumnSetting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Could not exit application. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnCouldNotExitApp {
+            get {
+                return ResourceManager.GetString("WarnCouldNotExitApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Could not export log file. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnCouldNotExportLog {
+            get {
+                return ResourceManager.GetString("WarnCouldNotExportLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Could not import log file. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnCouldNotImportLog {
+            get {
+                return ResourceManager.GetString("WarnCouldNotImportLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Could not open project file. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnCouldNotOpenProject {
+            get {
+                return ResourceManager.GetString("WarnCouldNotOpenProject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Could not print log file. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnCouldNotPrintLog {
+            get {
+                return ResourceManager.GetString("WarnCouldNotPrintLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Could not save project file. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnCouldNotSaveProjectFile {
+            get {
+                return ResourceManager.GetString("WarnCouldNotSaveProjectFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Please specify log file. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnDidNotSpecifiedLogFile {
+            get {
+                return ResourceManager.GetString("WarnDidNotSpecifiedLogFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred analyzing pattern setting view. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorAnalyzingPattern {
+            get {
+                return ResourceManager.GetString("WarnErrorAnalyzingPattern", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred application setting view. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorApplicationSetting {
+            get {
+                return ResourceManager.GetString("WarnErrorApplicationSetting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred column filter setting view. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorDisplayFilteringColumn {
+            get {
+                return ResourceManager.GetString("WarnErrorDisplayFilteringColumn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred range filter setting view. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorDisplayFilteringRange {
+            get {
+                return ResourceManager.GetString("WarnErrorDisplayFilteringRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred help. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorDisplayHelp {
+            get {
+                return ResourceManager.GetString("WarnErrorDisplayHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred displaying log data. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorDisplayLog {
+            get {
+                return ResourceManager.GetString("WarnErrorDisplayLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred highlight setting view. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorHighlightSetting {
+            get {
+                return ResourceManager.GetString("WarnErrorHighlightSetting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred jump row. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorJumpHighlightRow {
+            get {
+                return ResourceManager.GetString("WarnErrorJumpHighlightRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred move first row. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorMoveFirstRow {
+            get {
+                return ResourceManager.GetString("WarnErrorMoveFirstRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred move last row. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorMoveLastRow {
+            get {
+                return ResourceManager.GetString("WarnErrorMoveLastRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An error occurred move specified row. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorMoveSpecifiedRow {
+            get {
+                return ResourceManager.GetString("WarnErrorMoveSpecifiedRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Could not register Flat file extension. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnErrorNotRegisteredExtension {
+            get {
+                return ResourceManager.GetString("WarnErrorNotRegisteredExtension", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Could not find jumpable row. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnNotFoundJumpableRow {
+            get {
+                return ResourceManager.GetString("WarnNotFoundJumpableRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   This operation is invalid because not found log data. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string WarnNotFoundLogLines {
+            get {
+                return ResourceManager.GetString("WarnNotFoundLogLines", resourceCulture);
             }
         }
     }

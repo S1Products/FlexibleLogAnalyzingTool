@@ -28,8 +28,7 @@ namespace FlexibleLogAnalyzerTool
             InitializeComponent();
         }
 
-        #region "イベント処理"
-
+        #region "Event"
 
         private void AnalyzePatternSettingDialog_Load(object sender, EventArgs e)
         {
@@ -41,7 +40,7 @@ namespace FlexibleLogAnalyzerTool
         {
             if (PatternListBox.SelectedIndex == -1)
             {
-                MessageBox.Show("パターンを選択してください。");
+                MessageBox.Show(Properties.Resources.MessageChoosePattern);
                 return;
             }
 
@@ -55,7 +54,7 @@ namespace FlexibleLogAnalyzerTool
             }
         }
 
-        #region "パターン操作ボタン"
+        #region "Pattern accessor"
 
         private void AddButton_Click(object sender, EventArgs e)
         {
@@ -100,7 +99,7 @@ namespace FlexibleLogAnalyzerTool
 
             SettingFileAccessor.SavePatternDefinition(Application.StartupPath, updated);
 
-            MessageBox.Show("設定を保存しました");
+            MessageBox.Show(Properties.Resources.MessageSaveSetting);
 
             ShowPatternList();
         }
@@ -185,7 +184,7 @@ namespace FlexibleLogAnalyzerTool
 
             foreach (DataGridViewRow row in ColumnDefinitionDataGrid.Rows)
             {
-                // 最終行は新規行のため無視
+                // Ignore last row because it's new row
                 if (row == ColumnDefinitionDataGrid.Rows[ColumnDefinitionDataGrid.Rows.Count - 1])
                 {
                     break;
@@ -254,11 +253,5 @@ namespace FlexibleLogAnalyzerTool
 
             return updatedPattern;
         }
-
-        private void ColumnDefinitionDataGrid_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
-        {
-
-        }
-
     }
 }

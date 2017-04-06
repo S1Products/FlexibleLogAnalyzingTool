@@ -25,7 +25,7 @@ namespace FlexibleLogAnalyzerTool.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("MM/dd HH:mm:ss.fff")]
+        [global::System.Configuration.DefaultSettingValueAttribute("yyyy/MM/dd HH:mm:ss.fff")]
         public string DateTimeFormat {
             get {
                 return ((string)(this["DateTimeFormat"]));

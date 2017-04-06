@@ -95,7 +95,6 @@
             this.ColumnDefinitionDataGrid.MultiSelect = false;
             this.ColumnDefinitionDataGrid.Name = "ColumnDefinitionDataGrid";
             this.ColumnDefinitionDataGrid.RowTemplate.Height = 21;
-            this.ColumnDefinitionDataGrid.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.ColumnDefinitionDataGrid_RowsAdded);
             // 
             // label4
             // 

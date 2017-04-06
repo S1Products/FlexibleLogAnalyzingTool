@@ -31,8 +31,8 @@ namespace FlexibleLogAnalyzerTool
         
         public const int FIRST_CONTENT_INDEX = NOT_PARSED_INDEX + 1;
 
-        public const string LINE_NUMBER_HEADER_NAME = "行";
-        public const string FILE_NAME_HEADER_NAME = "ファイル名";
+        public string LINE_NUMBER_HEADER_NAME = Properties.Resources.ColumnTitleLineNumber;
+        public string FILE_NAME_HEADER_NAME = Properties.Resources.ColumnTitleFileName;
         public const string HAS_ERROR_HEADER_NAME = "___HasError";
         public const string NOT_PARSED_LINE_HEADER_NAME = "___NotParsedLine";
         public const string HIGHLIGHT_HEADER_NAME = "___Highlight";
@@ -44,6 +44,8 @@ namespace FlexibleLogAnalyzerTool
 
         public const int PRINT_HEADER_START_X = 30;
 
+        public const string FORMAT_NUMBER = "{0:#,0}";
+
         private ProjectAccessor projAccessor = new ProjectAccessor();
         private string currentProjectFilePath = null;
         private FlatProject currentProject;
@@ -53,7 +55,7 @@ namespace FlexibleLogAnalyzerTool
         private int printingCount;
         private int printingPosition;
         private string printContents;
-        private Font printFont = new Font("ＭＳ ゴシック", 8);
+        private Font printFont = new Font(Properties.Resources.DefaultFontName, 8);
 
         public MainForm()
         {
@@ -94,14 +96,14 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("プロジェクトが開けませんでした。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotOpenProject, ex);
             }
 
         }
 
-        #region "メニュー"
+        #region "Menu"
 
-        #region "ファイル"
+        #region "File"
 
         private async void AddNewProjectToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -118,7 +120,7 @@ namespace FlexibleLogAnalyzerTool
 
                 if (dialog.LogFileName == "")
                 {
-                    ShowWarningMessage("ログファイル名が指定されていません。");
+                    ShowWarningMessage(Properties.Resources.WarnDidNotSpecifiedLogFile);
                     log.Out();
                     return;
                 }
@@ -152,7 +154,7 @@ namespace FlexibleLogAnalyzerTool
                 {
                     string logFileName = logFileList[i];
 
-                    StartExecutionProgress("ログを解析中です... ファイル名:" + logFileName);
+                    StartExecutionProgress(Properties.Resources.MessageAnalyzingLog + logFileName);
 
                     if (i == 0)
                     {
@@ -168,7 +170,7 @@ namespace FlexibleLogAnalyzerTool
 
                 long elapsed = (DateTime.Now.Ticks - startTime.Ticks) / 10000000;
 
-                StopExecutionProgress("ログの解析が完了しました。(解析にかかった時間: " + elapsed.ToString() + "秒)");
+                StopExecutionProgress(Properties.Resources.MessageFinishedAnalyzingLog + elapsed.ToString() + " " + Properties.Resources.MessageElapsedSecUnit + ")");
 
                 if (!dialog.IsFile)
                 {
@@ -183,7 +185,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("新規プロジェクトの作成に失敗しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotCreateProjectFile, ex);
             }
         }
 
@@ -205,7 +207,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("プロジェクトが開けませんでした。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotOpenProject, ex);
             }
         }
 
@@ -221,13 +223,13 @@ namespace FlexibleLogAnalyzerTool
                 }
 
                 projAccessor.SaveProject(currentProjectFilePath);
-                ShowNormalMessage("プロジェクトを保存しました。");
+                ShowNormalMessage(Properties.Resources.MessageProjectFileSaved);
 
                 log.Out();
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("プロジェクトを保存できませんでした。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotSaveProjectFile, ex);
             }
         }
 
@@ -245,13 +247,13 @@ namespace FlexibleLogAnalyzerTool
 
                 currentProjectFilePath = SaveProjectFileDialog.FileName;
                 projAccessor.SaveProject(currentProjectFilePath);
-                ShowNormalMessage("プロジェクトを保存しました。");
+                ShowNormalMessage(Properties.Resources.MessageProjectFileSaved);
 
                 log.Out();
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("プロジェクトを保存できませんでした。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotSaveProjectFile, ex);
             }
         }
 
@@ -287,14 +289,14 @@ namespace FlexibleLogAnalyzerTool
                     {
                         string logFileName = logFileList[i];
 
-                        StartExecutionProgress("ログを解析中です... ファイル名:" + logFileName);
+                        StartExecutionProgress(Properties.Resources.MessageAnalyzingLog + logFileName);
 
                         await Task.Run(() => projAccessor.ImportLog(logFileName, dialog.FileEncoding));
                     }
 
                     long elapsed = (DateTime.Now.Ticks - startTime.Ticks) / 10000000;
 
-                    StopExecutionProgress("ログの解析が完了しました。(解析にかかった時間: " + elapsed.ToString() + "秒)");
+                    StopExecutionProgress(Properties.Resources.MessageFinishedAnalyzingLog + elapsed.ToString() + " " + Properties.Resources.MessageElapsedSecUnit + ")");
 
                     OpenCurrentProject();
                 }
@@ -303,7 +305,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("ログをエクスポートできませんでした。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotImportLog, ex);
             }
         }
 
@@ -317,7 +319,7 @@ namespace FlexibleLogAnalyzerTool
                 {
                     LogExporter exporter = null;
 
-                    // フィルタインデックス「1」はCSVをあらわす
+                    // Index 1 is csv
                     if (SaveExportedLogFileDialog.FilterIndex == 1)
                     {
                         exporter = new CSVLogExporter(SaveExportedLogFileDialog.FileName);
@@ -337,7 +339,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("ログをエクスポートできませんでした。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotExportLog, ex);
             }
         }
 
@@ -378,7 +380,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("ログを印刷できませんでした。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotPrintLog, ex);
             }
         }
 
@@ -394,13 +396,13 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("アプリを終了できませんでした。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotExitApp, ex);
             }
         }
 
         #endregion
 
-        #region "設定"
+        #region "Settings"
 
         private void ViewColumnSettingToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -420,7 +422,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("カラム設定表示中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnCouldNotDisplayColumnSetting, ex);
             }
         }
 
@@ -441,7 +443,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("解析パターン設定表示中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorAnalyzingPattern, ex);
             }
         }
 
@@ -461,13 +463,13 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("アプリケーション設定表示中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorApplicationSetting, ex);
             }
         }
 
         #endregion
 
-        #region "移動"
+        #region "Move"
 
         private void MoveFirstRowToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -481,7 +483,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("先頭行へ移動中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorMoveFirstRow, ex);
             }
         }
 
@@ -497,7 +499,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("最終行へ移動中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorMoveLastRow, ex);
             }
         }
 
@@ -513,13 +515,13 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("指定行へ移動中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorMoveSpecifiedRow, ex);
             }
         }
 
         #endregion
 
-        #region "検索"
+        #region "Search"
 
         private void HighlightSettingToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -538,7 +540,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("ハイライト設定表示中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorHighlightSetting, ex);
             }
         }
 
@@ -569,13 +571,13 @@ namespace FlexibleLogAnalyzerTool
                     }
                 }
 
-                ShowWarningMessage("ジャンプ可能な行が見つかりませんでした");
+                ShowWarningMessage(Properties.Resources.WarnNotFoundJumpableRow);
 
                 log.Out();
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("ハイライトへのジャンプ中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorJumpHighlightRow, ex);
             }
         }
 
@@ -605,13 +607,13 @@ namespace FlexibleLogAnalyzerTool
                     }
                 }
 
-                ShowWarningMessage("ジャンプ可能な行が見つかりませんでした");
+                ShowWarningMessage(Properties.Resources.WarnNotFoundJumpableRow);
 
                 log.Out();
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("ハイライトへのジャンプ中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorJumpHighlightRow, ex);
             }
         }
 
@@ -640,7 +642,7 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "フィルタリング"
+        #region "Filtering"
 
         private void FilteringRangeSettingToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -661,7 +663,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("範囲設定表示中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorDisplayFilteringRange, ex);
             }
         }
 
@@ -683,13 +685,13 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("カラム指定表示中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorDisplayFilteringColumn, ex);
             }
         }
 
         #endregion
 
-        #region "ヘルプ"
+        #region "Help"
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -704,7 +706,7 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("ヘルプ表示中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorDisplayHelp, ex);
             }
         }
 
@@ -712,9 +714,7 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "描画処理"
-
-        #region "エラー行の描画処理"
+        #region "Cell rendering for LogDataGridView"
 
         private void LogDataGridView_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
@@ -722,7 +722,7 @@ namespace FlexibleLogAnalyzerTool
             {
                 log.InPrivate();
 
-                // 行が1件もない、ヘッダー行を指している、行番号カラムを指している場合
+                // Row is empty or Row index is row header
                 if (LogDataGridView.Rows.Count == 0 || e.RowIndex < 0)
                 {
                     log.OutPrivate();
@@ -745,9 +745,11 @@ namespace FlexibleLogAnalyzerTool
             }
             catch (Exception ex)
             {
-                ShowErrorMessage("ログのグリッド表示中にエラーが発生しました。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorDisplayLog, ex);
             }
         }
+
+        #region "Paint error row"
 
         private void PaintCellNotParsedRow(DataRow row, DataGridViewCellPaintingEventArgs e)
         {
@@ -757,7 +759,7 @@ namespace FlexibleLogAnalyzerTool
 
             DataGridViewRow viewRow = LogDataGridView.Rows[e.RowIndex];
 
-            if (e.ColumnIndex != viewRow.Cells.Count - 1)   //最終カラム
+            if (e.ColumnIndex != viewRow.Cells.Count - 1)   //Last column
             {
                 e.AdvancedBorderStyle.Right = DataGridViewAdvancedCellBorderStyle.None;
             }
@@ -788,18 +790,16 @@ namespace FlexibleLogAnalyzerTool
 
             Rectangle rect = new Rectangle(e.CellBounds.X, e.CellBounds.Y, 0, e.CellBounds.Height);
 
-            // 行番号カラムとエラー行を無視してWidthを計算
+            // Skip invisible rows
             for (int i = FIRST_CONTENT_INDEX; i < LogDataGridView.Columns.Count; i++)
             {
                 DataGridViewColumn col = LogDataGridView.Columns[i];
                 rect.Width += col.Width;
             }
 
-            // グリッドの線分縮める
             rect.Width -= BORDER_SIZE;
-            //rect.Height -= BORDER_SIZE;   // 下側の区切り線を描画させないため、あえてコメントアウト
+            //rect.Height -= BORDER_SIZE;   // Comment out because do not display bottom border
 
-            // 背景色の処理
             Brush backcolorBrush = null;
             Brush forecolorBrush = null;
 
@@ -819,6 +819,10 @@ namespace FlexibleLogAnalyzerTool
 
             log.OutPrivate();
         }
+
+        #endregion
+
+        #region "Paint normal cell"
 
         private void PaintCellParsedRow(DataRow row, DataGridViewCellPaintingEventArgs e)
         {
@@ -865,7 +869,7 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "キー入力"
+        #region "Keyboard input"
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -880,13 +884,13 @@ namespace FlexibleLogAnalyzerTool
                     case Keys.Home:
 
                         if (LogDataGridView.Rows.Count > 0)
-                            ShowNormalMessage("先頭行に移動しました");
+                            ShowNormalMessage(Properties.Resources.MessageMoveFirstRow);
                         break;
 
                     case Keys.End:
 
                         if (LogDataGridView.Rows.Count > 0)
-                            ShowNormalMessage("最終行に移動しました");
+                            ShowNormalMessage(Properties.Resources.MessageMoveLastRow);
                         break;
 
                     case Keys.C:
@@ -903,7 +907,7 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "内部処理"
+        #region "Internal"
 
         private void CloseCurrentProject()
         {
@@ -924,14 +928,14 @@ namespace FlexibleLogAnalyzerTool
                 return;
             }
 
-            this.Text = "FLAT (プロジェクト名: " + currentProject.ProjectName + ")";
+            this.Text = Properties.Resources.ApplicationTitle + currentProject.ProjectName + ")";
 
             ShowLog(currentOffset);
 
             log.OutPrivate();
         }
 
-        #region "ログの表示処理"
+        #region "Display log"
 
         private void ShowLog(int offset)
         {
@@ -976,13 +980,13 @@ namespace FlexibleLogAnalyzerTool
             ValidateMenuItems();
 
 
-            TotalLineCountToolStripStatusLabel.Text = String.Format("{0:#,0}", parsedLog.TotalLineCount);
-            TargetLineCountToolStripStatusLabel.Text = String.Format("{0:#,0}", parsedLog.TargetLineCount);
+            TotalLineCountToolStripStatusLabel.Text = String.Format(FORMAT_NUMBER, parsedLog.TotalLineCount);
+            TargetLineCountToolStripStatusLabel.Text = String.Format(FORMAT_NUMBER, parsedLog.TargetLineCount);
 
-            string offsetStr = String.Format("{0:#,0}", currentOffset + 1);
-            string rowCountStr = String.Format("{0:#,0}", LogDataGridView.Rows.Count);
+            string offsetStr = String.Format(FORMAT_NUMBER, currentOffset + 1);
+            string rowCountStr = String.Format(FORMAT_NUMBER, LogDataGridView.Rows.Count);
 
-            ShowNormalMessage("ログを表示しました。");
+            ShowNormalMessage(Properties.Resources.MessageLogDisplayed);
             StartIndexStripStatusLabel.Text = offsetStr;
             DisplayedRowNumStripStatusLabel.Text = rowCountStr;
         }
@@ -1010,12 +1014,12 @@ namespace FlexibleLogAnalyzerTool
                     continue;
                 }
 
-                //ハイライト設定用のカラムを追加（非表示）
+                // Add invisible highlight values column
                 DataGridViewColumn highlightCol = CreateInvisibleColumnHeader(colDef.ColumnName + HIGHLIGHT_HEADER_NAME);
                 LogDataGridView.Columns.Add(highlightCol);
                 table.Columns.Add(colDef.ColumnName + HIGHLIGHT_HEADER_NAME, typeof(HighlightList));
 
-                //ログ表示用のカラムを追加
+                // Add normal log column
                 DataGridViewColumn col = CreateDefaultColumnHeader(colDef.ColumnName);
 
                 if (colDef.IsDateTimeField)
@@ -1033,7 +1037,7 @@ namespace FlexibleLogAnalyzerTool
                 table.Columns.Add(colDef.ColumnName);
             }
 
-            // 最終列のみ表示モードをFillに設定
+            // Set fill mode to last column
             LogDataGridView.Columns[LogDataGridView.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             log.OutPrivate();
@@ -1157,7 +1161,7 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "移動処理"
+        #region "Move"
 
         private void PreviousResultToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1197,13 +1201,13 @@ namespace FlexibleLogAnalyzerTool
 
             if (LogDataGridView.Rows.Count <= 0)
             {
-                ShowWarningMessage("ログが存在しない状態では無効です");
+                ShowWarningMessage(Properties.Resources.WarnNotFoundLogLines);
                 log.OutPrivate();
                 return;
             }
 
             MoveRow(0);
-            ShowNormalMessage("先頭行に移動しました");
+            ShowNormalMessage(Properties.Resources.MessageMoveFirstRow);
 
             log.OutPrivate();
         }
@@ -1214,13 +1218,13 @@ namespace FlexibleLogAnalyzerTool
 
             if (LogDataGridView.Rows.Count <= 0)
             {
-                ShowWarningMessage("ログが存在しない状態では無効です");
+                ShowWarningMessage(Properties.Resources.WarnNotFoundLogLines);
                 log.OutPrivate();
                 return;
             }
 
             MoveRow(LogDataGridView.Rows.Count - 1);
-            ShowNormalMessage("最終行に移動しました");
+            ShowNormalMessage(Properties.Resources.MessageMoveLastRow);
 
             log.OutPrivate();
         }
@@ -1231,12 +1235,12 @@ namespace FlexibleLogAnalyzerTool
 
             if (LogDataGridView.Rows.Count <= 0)
             {
-                ShowWarningMessage("ログが存在しない状態では無効です");
+                ShowWarningMessage(Properties.Resources.WarnNotFoundLogLines);
                 log.OutPrivate();
                 return;
             }
 
-            string lineNumStr = Interaction.InputBox("行番号を入力");
+            string lineNumStr = Interaction.InputBox(Properties.Resources.MessageSpecifyRowNumber);
 
             if (lineNumStr == "")
             {
@@ -1251,7 +1255,7 @@ namespace FlexibleLogAnalyzerTool
 
             if (rowIndex == -1)
             {
-                ShowWarningMessage("指定行が見つかりませんでした");
+                ShowWarningMessage(Properties.Resources.WarnErrorMoveSpecifiedRow);
                 log.OutPrivate();
                 return;
             }
@@ -1280,14 +1284,14 @@ namespace FlexibleLogAnalyzerTool
             LogDataGridView.Rows[rowIndex].Selected = true;
             LogDataGridView.CurrentCell = LogDataGridView[0, rowIndex];
 
-            ShowNormalMessage((rowIndex + 1) + "行目に移動しました");
+            ShowNormalMessage(Properties.Resources.MessageMovedRow + "(" + Properties.Resources.MessageLineNumber + ": " + (rowIndex + 1) + ")");
 
             log.OutPrivate();
         }
 
         #endregion
 
-        #region "ステータス表示"
+        #region "Status"
 
         private void ShowNormalMessage(string message)
         {
@@ -1350,7 +1354,7 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "メニュー表示"
+        #region "Enable/Disable Menu items"
 
         private void InvalidateAllMenuItems()
         {
@@ -1411,7 +1415,7 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "コピー処理"
+        #region "Copy log lines"
 
         private void CopyLogDataToClipboard()
         {
@@ -1512,13 +1516,13 @@ namespace FlexibleLogAnalyzerTool
 
         #endregion
 
-        #region "印刷処理"
+        #region "Print"
 
         private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
             printingCount++;
 
-            //改行記号を'\n'に統一する
+            // Convert new line char code
             if (printingPosition == 0)
             {
                 printContents = printContents.Replace("\r\n", "\n");
@@ -1530,15 +1534,13 @@ namespace FlexibleLogAnalyzerTool
             int x = e.MarginBounds.Left;
             int y = e.MarginBounds.Top;
 
-            //1ページに収まらなくなるか、印刷する文字がなくなるかまでループ
+            // Loop end content or fill page
             while (e.MarginBounds.Bottom > y + printFont.Height &&
                 printingPosition < printContents.Length)
             {
                 string line = "";
                 for (; ; )
                 {
-                    //印刷する文字がなくなるか、
-                    //改行の時はループから抜けて印刷する
                     if (printingPosition >= printContents.Length ||
                         printContents[printingPosition] == '\n')
                     {
@@ -1546,7 +1548,6 @@ namespace FlexibleLogAnalyzerTool
                         break;
                     }
 
-                    //一文字追加し、印刷幅を超えるか調べる
                     line += printContents[printingPosition];
                     if (e.Graphics.MeasureString(line, printFont).Width
                         > e.MarginBounds.Width)
@@ -1582,7 +1583,7 @@ namespace FlexibleLogAnalyzerTool
             int y = PRINT_HEADER_START_X;
 
             Font headerFont = new Font(printFont, FontStyle.Italic | FontStyle.Bold);
-            e.Graphics.DrawString("プロジェクト名: " + currentProject.ProjectName, headerFont, Brushes.Black, x, y);
+            e.Graphics.DrawString(Properties.Resources.MessageProjectName + currentProject.ProjectName, headerFont, Brushes.Black, x, y);
         }
 
         private void PrintFooter(PrintPageEventArgs e)
@@ -1652,11 +1653,11 @@ namespace FlexibleLogAnalyzerTool
             try
             {
                 System.Diagnostics.Process.Start(psi);
-                ShowNormalMessage("拡張子を登録しました。");
+                ShowNormalMessage(Properties.Resources.MessageRegisteredExtension);
             }
             catch (System.ComponentModel.Win32Exception ex)
             {
-                ShowErrorMessage("拡張子を登録できませんでした。", ex);
+                ShowErrorMessage(Properties.Resources.WarnErrorNotRegisteredExtension, ex);
             }
         }
     }
