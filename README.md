@@ -6,14 +6,21 @@
 
 <p align="center"><img src ="./images/FLAT.png" /></p>
 
-## Features
+## About FLAT
 
-プロダクトの開発やシステム開発を行っていると、様々な形式のログファイルを解析しなければならない事があります。  
-FlexibleLogAnalyzingTool (FLAT)は、それらサーバやアプリケーションが出力する様々な形式のログファイルを解析し、統一のログ形式に変換します。
-また、ログの抽出や検索、CSVやExcel形式でのエクスポート機能を有しており、フレキシブルにログを解析することが可能になります。
+Did followings ever happen to you on your product or system support?
+* Have to analyze different format log files crossover
+* Cannot open very big log file
+* Forgot search keywords for past analyzing
+* Export target log lines manually to excel file
 
-当ツールの大きな特徴として、ログの抽出結果や検索結果を保存し、次回ツールを開いた際に以前開いた状態から復元することが可能になっています。
-これにより、「前にログを解析した時のキーワードが分からない・・・」「他の人が解析した結果と違う・・・」といった事を防ぐ事が可能です。
+FLAT has very strong log analyzing functions.  
+* You can check log files with unified format.  
+* You can open big log files quickly.  
+* You can reproduce past analyzing result anytime.  
+* You can export target log lines to CSV or Excel file.
+
+FLAT can be help your support work.
 
 ## Getting Started
 
