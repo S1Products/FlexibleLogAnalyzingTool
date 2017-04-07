@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatEngine", "FlatEngine\Fl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatUI", "FlatUI\FlatUI.csproj", "{7D2B5D34-5326-470B-861D-4511D888B0CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatEngineTests", "FlatEngineTests\FlatEngineTests.csproj", "{E3DF353E-F912-4764-9AE4-9DC004C1BC64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,14 @@ Global
 		{7D2B5D34-5326-470B-861D-4511D888B0CE}.Release|x64.Build.0 = Release|x64
 		{7D2B5D34-5326-470B-861D-4511D888B0CE}.Release|x86.ActiveCfg = Release|x86
 		{7D2B5D34-5326-470B-861D-4511D888B0CE}.Release|x86.Build.0 = Release|x86
+		{E3DF353E-F912-4764-9AE4-9DC004C1BC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DF353E-F912-4764-9AE4-9DC004C1BC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DF353E-F912-4764-9AE4-9DC004C1BC64}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E3DF353E-F912-4764-9AE4-9DC004C1BC64}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E3DF353E-F912-4764-9AE4-9DC004C1BC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DF353E-F912-4764-9AE4-9DC004C1BC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DF353E-F912-4764-9AE4-9DC004C1BC64}.Release|x64.ActiveCfg = Release|Any CPU
+		{E3DF353E-F912-4764-9AE4-9DC004C1BC64}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

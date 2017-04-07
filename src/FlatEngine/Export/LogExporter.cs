@@ -38,6 +38,10 @@ namespace FlatEngine.Export
         /// <param name="log">Target logs</param>
         public void Export(FlatProject project, ParsedLog log)
         {
+            // Param check
+            if (project == null){ throw new ArgumentNullException("FlatProject"); }
+            if (log == null){ throw new ArgumentNullException("ParsedLog"); }
+
             OnRenderDocumentHeader(project, log);
 
             OnRenderMain(project, log);
