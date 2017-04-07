@@ -1,5 +1,4 @@
 <p align="right">日本語版のREADMEは<a href="README.ja.md">こちら</a></p>
-
 # <img src ="./images/AppLogo.png" />FlexibleLogAnalyzingTool (FLAT)
 
 *Convert various log files to unified log format. And it has some useful analyzing functions.*
