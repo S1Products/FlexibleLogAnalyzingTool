@@ -139,6 +139,10 @@
   <data name="ValueHeader.Text" xml:space="preserve">
     <value>値</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 12</value>
   </data>
@@ -150,6 +154,9 @@
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>解析済み要素:</value>
+  </data>
+  <data name="ElementCountLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>正規表現のテスト</value>
