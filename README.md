@@ -33,7 +33,7 @@ If you deploy this application to "Program Files" or "Program Files (x86)" direc
 
 ### Usage
 
-Please see [Usage page](../../wiki/usage.ja).
+Please see [Usage page](../../wiki/Usage).
 
 ## Built With
 
