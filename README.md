@@ -1,3 +1,5 @@
+日本語版のREADMEは[こちら](README.ja.md)
+
 # FlexibleLogAnalyzingTool (FLAT)
 
 *Convert various log files to unified log format. And it has some useful analyzing functions.*
