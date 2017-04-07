@@ -1,0 +1,10 @@
+*****************************************
+ Project name: FLAT Test 01
+# Created date: 2017/04/07 17:41:39
+*****************************************
+Line,DateTime,Level,Message
+1,04/07 15:56:51.191,INFO,>> .ctor
+2,04/07 15:56:53.032,INFO,>> ProcessCmdKey{[PRM0=msg=0x104 (WM_SYSKEYDOWN) hwnd=0x2048c wparam=0x12 lparam=0x20380001 result=0x0][PRM1=Menu, Alt]}
+3,04/07 15:56:53.047,INFO,<< ProcessCmdKey [RET=False]
+4,04/07 15:56:53.063,INFO,>> CloseProject
+5,04/07 15:56:53.063,INFO,<< CloseProject
