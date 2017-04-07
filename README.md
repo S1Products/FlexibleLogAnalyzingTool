@@ -62,7 +62,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Miura Acoustic** - *Initial work* - [S1 Products](https://github.com/PurpleBooth)
+* **Miura Acoustic** - *Initial work* - [S1 Products](http://s1products.info)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
