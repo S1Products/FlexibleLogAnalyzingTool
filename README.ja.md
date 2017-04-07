@@ -1,5 +1,8 @@
-# FlexibleLogAnalyzingTool (FLAT)
+# <img src ="./images/AppLogo.png" />FlexibleLogAnalyzingTool (FLAT)
+
 *様々な形式のログファイルを統一フォーマットに変換し、ログを解析する為の各種機能を提供*
+
+<p align="center"><img src ="./images/FLAT.png" /></p>
 
 ## 特徴
 プロダクトの開発やシステム開発を行っていると、様々な形式のログファイルを解析しなければならない事があります。  

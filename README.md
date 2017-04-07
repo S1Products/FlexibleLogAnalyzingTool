@@ -1,10 +1,10 @@
-日本語版のREADMEは[こちら](README.ja.md)
+<p align="right">日本語版のREADMEは<a href="README.ja.md">こちら</a></p>
 
-# FlexibleLogAnalyzingTool (FLAT)
+# <img src ="./images/AppLogo.png" />FlexibleLogAnalyzingTool (FLAT)
 
 *Convert various log files to unified log format. And it has some useful analyzing functions.*
 
-![FLAT](images/FLAT.png "Flexible Log Analyzing Tool (FLAT)")
+<p align="center"><img src ="./images/FLAT.png" /></p>
 
 ## Features
 
@@ -33,7 +33,7 @@ If you deploy this application to "Program Files" or "Program Files (x86)" direc
 
 ### Usage
 
-Please see [Usage page](../../wiki/usage.ja).
+Please see [Usage page](../../wiki/Usage).
 
 ## Built With
 
