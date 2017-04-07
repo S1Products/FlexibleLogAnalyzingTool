@@ -131,7 +131,7 @@ namespace FlatEngine.Export
             this.contentNumberStyle.DataFormat = workbook.CreateDataFormat().GetFormat(FORMAT_STR_NUMBER);
         }
 
-        public override void OnClose()
+        protected override void OnClose()
         {
             using (FileStream stream = new FileStream(fileName, FileMode.Create, FileAccess.ReadWrite))
             {
@@ -143,7 +143,7 @@ namespace FlatEngine.Export
 
         #region "Header"
 
-        public override void OnRenderDocumentHeader(FlatProject project, ParsedLog log)
+        protected override void OnRenderDocumentHeader(FlatProject project, ParsedLog log)
         {
             CreateSheets();
 
@@ -270,7 +270,7 @@ namespace FlatEngine.Export
 
         #region "Main contents"
 
-        public override void OnRenderMain(FlatProject project, ParsedLog log)
+        protected override void OnRenderMain(FlatProject project, ParsedLog log)
         {
             int rowPos = LG_ROW_POS_CONTENT_START;
 
@@ -356,7 +356,7 @@ namespace FlatEngine.Export
 
         #region "Footer"
 
-        public override void OnRenderDocumentFooter(FlatProject project, ParsedLog log)
+        protected override void OnRenderDocumentFooter(FlatProject project, ParsedLog log)
         {
             // Nothing to do
         }

@@ -45,11 +45,11 @@ namespace FlatEngine.Export
             OnRenderDocumentFooter(project, log);
         }
 
-        public abstract void OnRenderDocumentHeader(FlatProject project, ParsedLog log);
+        protected abstract void OnRenderDocumentHeader(FlatProject project, ParsedLog log);
 
-        public abstract void OnRenderMain(FlatProject project, ParsedLog log);
+        protected abstract void OnRenderMain(FlatProject project, ParsedLog log);
 
-        public abstract void OnRenderDocumentFooter(FlatProject project, ParsedLog log);
+        protected abstract void OnRenderDocumentFooter(FlatProject project, ParsedLog log);
 
 
         public void Close()
@@ -57,7 +57,7 @@ namespace FlatEngine.Export
             OnClose();
         }
 
-        public abstract void OnClose();
+        protected abstract void OnClose();
 
         public void Dispose()
         {

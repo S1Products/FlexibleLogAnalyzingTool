@@ -60,7 +60,7 @@ namespace FlatEngine.Export
             writer = new StreamWriter(fileName, append, enc);
         }
 
-        public override void OnRenderDocumentHeader(FlatProject project, ParsedLog log)
+        protected override void OnRenderDocumentHeader(FlatProject project, ParsedLog log)
         {
             writer.WriteLine("*****************************************");
             writer.WriteLine(" Project name: " + project.ProjectName);
@@ -86,7 +86,7 @@ namespace FlatEngine.Export
             writer.WriteLine(sb.ToString());
         }
 
-        public override void OnRenderMain(FlatProject project, ParsedLog log)
+        protected override void OnRenderMain(FlatProject project, ParsedLog log)
         {
             foreach (ParsedLogLine line in log.LogLineList)
             {
@@ -129,12 +129,12 @@ namespace FlatEngine.Export
             }
         }
 
-        public override void OnRenderDocumentFooter(FlatProject project, ParsedLog log)
+        protected override void OnRenderDocumentFooter(FlatProject project, ParsedLog log)
         {
             // Nothing to do
         }
 
-        public override void OnClose()
+        protected override void OnClose()
         {
             writer.Close();
         }
