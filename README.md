@@ -1,4 +1,4 @@
-日本語版のREADMEは[こちら](README.ja.md)
+<p align="right">日本語版のREADMEは<a href="README.ja.md">こちら</a></p>
 
 # <img src ="./images/AppLogo.png" />FlexibleLogAnalyzingTool (FLAT)
 
