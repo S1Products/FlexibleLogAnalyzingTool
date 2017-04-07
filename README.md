@@ -26,6 +26,10 @@ FLAT has very strong log analyzing functions.
 
 **FLAT can be help your support work.**
 
+## Download
+
+Latest binary is [here](releases/latest).
+
 ## Getting Started
 
 This section will guide prerequisites, installing and usage.
