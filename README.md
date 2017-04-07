@@ -4,6 +4,8 @@
 
 *Convert various log files to unified log format. And it has some useful analyzing functions.*
 
+![FLAT main view]("./images/FLAT.png" "Flexible Log Analyzing Tool (FLAT)")
+
 ## Features
 
 プロダクトの開発やシステム開発を行っていると、様々な形式のログファイルを解析しなければならない事があります。  
