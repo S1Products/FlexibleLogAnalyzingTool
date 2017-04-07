@@ -28,7 +28,7 @@ FLAT has very strong log analyzing functions.
 
 ## Download
 
-Latest binary is [here](releases/latest).
+Latest binary is [here](../../releases/latest).
 
 ## Getting Started
 
