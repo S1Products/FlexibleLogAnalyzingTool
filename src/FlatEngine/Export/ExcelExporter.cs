@@ -113,6 +113,11 @@ namespace FlatEngine.Export
 
         public ExcelLogExporter(string fileName)
         {
+            if (fileName == null || fileName == "")
+            {
+                throw new ArgumentException("Invalid argument specified.", "fileName");
+            }
+
             this.maxCellWidthDictionary = new Dictionary<string, int>();
             this.fileName = fileName;
             this.workbook = new XSSFWorkbook();
