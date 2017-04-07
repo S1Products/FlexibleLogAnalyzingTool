@@ -55,4 +55,4 @@ Program Filesフォルダに配置する場合、配置先のフォルダへWind
 
 ## ライセンス
 
-当プロジェクトは「Apache v2」ライセンスを適用しています。 ライセンスの詳細は[LICENSE.md](LICENSE.md)を参照してください。
+当プロジェクトは「Apache License 2.0」ライセンスを適用しています。 ライセンスの詳細は[LICENSE.md](LICENSE.md)を参照してください。
