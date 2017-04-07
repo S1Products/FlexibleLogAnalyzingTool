@@ -31,6 +31,11 @@ Program Filesフォルダに配置する場合、配置先のフォルダへWind
 * [NPOI](https://npoi.codeplex.com/) - Export Excel function
 * [Application Icon](http://gentleface.com/free_icon_set.html) - Used to Application icons
 
+## 募集
+
+一緒に開発して頂ける方を募集しています。また開発だけで無く、英語が得意な方も募集しています。  
+プロジェクトに興味のある方は、ぜひForkをお願いいたします。
+
 ## バージョン管理体系
 バージョン管理体系には、[SemVer](http://semver.org/) を用いています。
 利用可能なバージョンを確認する場合は、当ページ内の[タグ](https://github.com/S1Products/FlexibleLogAnalyzingTool/tags)を参照してください。
