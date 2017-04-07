@@ -4,7 +4,7 @@
 
 *Convert various log files to unified log format. And it has some useful analyzing functions.*
 
-![FLAT main view]("./images/FLAT.png" "Flexible Log Analyzing Tool (FLAT)")
+![FLAT](images/FLAT.png "Flexible Log Analyzing Tool (FLAT)")
 
 ## Features
 
