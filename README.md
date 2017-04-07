@@ -9,16 +9,20 @@
 ## About FLAT
 
 Did followings ever happen to you on your product or system support?
-* Have to analyze different log format crossover
-* Cannot open very big log file
-* Forgot search keywords for past analyzing
-* Export target log lines manually to excel file
+```
+  - Have to analyze different log format crossover
+  - Cannot open very big log file
+  - Forgot search keywords for past analyzing
+  - Export target log lines manually to excel file
+```
 
 FLAT has very strong log analyzing functions.  
-* You can check log files with unified format.  
-* You can open big log files quickly.  
-* You can reproduce past analyzing result anytime.  
-* You can export target log lines to CSV or Excel file.
+```
+  - You can check log files with unified format.  
+  - You can open big log files quickly.  
+  - You can reproduce past analyzing result anytime.  
+  - You can export target log lines to CSV or Excel file.
+```
 
 FLAT can be help your support work.
 
