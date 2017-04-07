@@ -131,7 +131,7 @@ namespace FlatEngine.IntermediateLog
         /// Get total log lines count
         /// </summary>
         /// <returns>Total log lines count</returns>
-        public int GetTotalLineCount()
+        private int GetTotalLineCount()
         {
             log.In();
 
@@ -153,7 +153,7 @@ namespace FlatEngine.IntermediateLog
         /// </summary>
         /// <param name="criteria">Search conditions</param>
         /// <returns>Log line count</returns>
-        public int GetLineCount(SearchCriteria criteria)
+        private int GetLineCount(SearchCriteria criteria)
         {
             log.In(criteria);
 
