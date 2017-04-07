@@ -16,7 +16,7 @@ FlexibleLogAnalyzingTool (FLAT)は、それらサーバやアプリケーショ�
 
 ## ダウンロード
 
-最新版のバイナリは[こちら](releases/latest)から
+最新版のバイナリは[こちら](../../releases/latest)から
 
 ## はじめに
 
