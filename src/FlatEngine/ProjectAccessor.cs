@@ -37,7 +37,7 @@ namespace FlatEngine
     /// Project file accessor.
     /// </summary>
     /// <author>Miura Acoustic</author>
-    public class ProjectAccessor
+    public class ProjectAccessor : IDisposable
     {
         private Log log = new Log(MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -385,5 +385,19 @@ namespace FlatEngine
         #endregion 
 
         #endregion
+
+        /// <summary>
+        /// Dispose object.
+        /// You can use "using" statement.
+        /// Auto close internal connection without call Close method.
+        /// </summary>
+        public void Dispose()
+        {
+            log.In();
+
+            CloseProject();
+
+            log.Out();
+        }
     }
 }
