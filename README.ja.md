@@ -1,3 +1,5 @@
+<p align="right">English README is <a href="README.md">here.</a></p>
+
 # <img src ="./images/AppLogo.png" />FlexibleLogAnalyzingTool (FLAT)
 
 *様々な形式のログファイルを統一フォーマットに変換し、ログを解析する為の各種機能を提供*
