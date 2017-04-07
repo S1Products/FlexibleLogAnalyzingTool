@@ -1,10 +1,12 @@
 日本語版のREADMEは[こちら](README.ja.md)
 
+<p align="center"><img src ="./images/AppLogo.png" /></p>
+
 # FlexibleLogAnalyzingTool (FLAT)
 
 *Convert various log files to unified log format. And it has some useful analyzing functions.*
 
-![FLAT](images/FLAT.png "Flexible Log Analyzing Tool (FLAT)")
+<p align="center"><img src ="./images/FLAT.png" /></p>
 
 ## Features
 
