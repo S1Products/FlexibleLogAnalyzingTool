@@ -78,7 +78,10 @@ namespace FlatEngine.Export
 
             foreach (ColumnDefinition colDef in project.PatternDefinition.ColumnDefinitionList)
             {
-                sb.Append(colDef.ColumnName + Delimiter);
+                if (colDef.Visble)
+                {
+                    sb.Append(colDef.ColumnName + Delimiter);
+                }
             }
 
             RemoveLastDelimiter(sb);
@@ -113,6 +116,10 @@ namespace FlatEngine.Export
                         {
                             DateTime time = new DateTime(long.Parse(col.Value));
                             sb.Append(time.ToString(DATE_TIME_FORMAT));
+                        }
+                        else if(!col.ColumnDefinition.Visble)
+                        {
+                            continue;
                         }
                         else
                         {
