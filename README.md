@@ -24,11 +24,11 @@ FLAT has very strong log analyzing functions.
   - You can export target log lines to CSV or Excel file.
 ```
 
-**FLAT can be help your support work.**
+**FLAT can be help your support work!!**
 
 ## Download
 
-Latest binary is [here](releases/latest).
+Latest binary is [here](../../releases/latest).
 
 ## Getting Started
 
