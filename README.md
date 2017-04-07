@@ -9,7 +9,7 @@
 ## About FLAT
 
 Did followings ever happen to you on your product or system support?
-* Have to analyze different format log files crossover
+* Have to analyze different log format crossover
 * Cannot open very big log file
 * Forgot search keywords for past analyzing
 * Export target log lines manually to excel file
