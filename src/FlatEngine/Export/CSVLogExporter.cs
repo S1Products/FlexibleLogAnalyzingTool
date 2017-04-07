@@ -136,7 +136,10 @@ namespace FlatEngine.Export
 
         protected override void OnClose()
         {
-            writer.Close();
+            if (writer != null)
+            {
+                writer.Close();
+            }
         }
 
         private void RemoveLastDelimiter(StringBuilder sb)

@@ -47,12 +47,6 @@ namespace FlatEngine.IntermediateLog
         public const string HASHED_SUFFIX = "_HASHED";
 
         /// <summary>
-        /// Current reader column definition list.
-        /// Parsed log lines are mapped columns by this definitions.
-        /// </summary>
-        private ColumnDefinitionList colDefList;
-
-        /// <summary>
         /// Database connection
         /// </summary>
         private SQLiteConnection connection;
@@ -63,12 +57,9 @@ namespace FlatEngine.IntermediateLog
         /// Constructor
         /// </summary>
         /// <param name="fileName">Database file name</param>
-        /// <param name="patternDef">Analyzing pattern definition</param>
-        public IntermediateLogReader(String fileName, PatternDefinition patternDef)
+        public IntermediateLogReader(String fileName)
         {
-            log.In(fileName, patternDef);
-
-            this.colDefList = patternDef.ColumnDefinitionList;
+            log.In(fileName);
 
             connection = SQLiteUtil.OpenConnection(fileName);
 
@@ -174,16 +165,17 @@ namespace FlatEngine.IntermediateLog
         /// <summary>
         /// Read log lines from database
         /// </summary>
-        /// <param name="criteria">Search condition</param>
-        /// <param name="colDefList">Column definition list</param>
-        /// <param name="highlightDefList">Highlight definition list</param>
+        /// <param name="project">Current project</param>
         /// <param name="offset">Read start position</param>
         /// <param name="limit">Read log lines limit</param>
         /// <returns>Parsed log lines</returns>
-        public ParsedLog ReadLines(SearchCriteria criteria, ColumnDefinitionList colDefList,
-            HighlightDefinitionList highlightDefList, int offset, int limit)
+        public ParsedLog ReadLines(FlatProject project, int offset, int limit)
         {
-            log.In(criteria, offset, limit);
+            log.In(project, offset, limit);
+
+            SearchCriteria criteria = project.SearchCriteria;
+            ColumnDefinitionList colDefList = project.PatternDefinition.ColumnDefinitionList;
+            HighlightDefinitionList highlightDefList = project.HighlightDefinitionList;
 
             SQLiteCommand comm = connection.CreateCommand();
             SetSelectStatement(comm, colDefList, criteria, offset, limit);

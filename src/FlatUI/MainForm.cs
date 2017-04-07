@@ -975,10 +975,7 @@ namespace FlexibleLogAnalyzingTool
             AddLogListHeader(table, proj.PatternDefinition.ColumnDefinitionList);
 
             int maxLineCount = Properties.Settings.Default.MaxLineCount;
-            ParsedLog parsedLog = reader.ReadLines(currentProject.SearchCriteria, 
-                                                   proj.PatternDefinition.ColumnDefinitionList, 
-                                                   proj.HighlightDefinitionList, 
-                                                   offset, maxLineCount);
+            ParsedLog parsedLog = reader.ReadLines(currentProject, offset, maxLineCount);
 
             foreach (ParsedLogLine line in parsedLog.LogLineList)
             {

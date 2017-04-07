@@ -126,7 +126,7 @@ namespace FlatEngine
                 imLogWriter.Write(fileName, logStream, enc);
             }
 
-            reader = new IntermediateLogReader(logFileName, currentProject.PatternDefinition);
+            reader = new IntermediateLogReader(logFileName);
 
             log.Out(currentProject);
             return currentProject;
@@ -148,7 +148,7 @@ namespace FlatEngine
             currentProject.WorkingDirectory = tempDirectory;
 
             string logFileName = CreateDatabaseFilePath(currentProject);
-            reader = new IntermediateLogReader(logFileName, currentProject.PatternDefinition);
+            reader = new IntermediateLogReader(logFileName);
 
             log.Out(currentProject);
             return currentProject;
@@ -173,7 +173,7 @@ namespace FlatEngine
             Archiver.CompressDirectory(currentProject.WorkingDirectory, projectFilePath);
 
             string logFileName = CreateDatabaseFilePath(currentProject);
-            reader = new IntermediateLogReader(logFileName, currentProject.PatternDefinition);
+            reader = new IntermediateLogReader(logFileName);
 
             log.Out();
         }
@@ -247,10 +247,7 @@ namespace FlatEngine
             log.In(exporter);
 
             ParsedLog parsedLog 
-                = reader.ReadLines(currentProject.SearchCriteria,
-                                   currentProject.PatternDefinition.ColumnDefinitionList,
-                                   currentProject.HighlightDefinitionList,
-                                   0, int.MaxValue);
+                = reader.ReadLines(currentProject, 0, int.MaxValue);
 
             ExportLog(exporter, parsedLog);
 
@@ -353,7 +350,7 @@ namespace FlatEngine
         /// </summary>
         /// <param name="project">Target project</param>
         /// <param name="path">Destination path</param>
-        public void SerializeProject(FlatProject project, string path)
+        private void SerializeProject(FlatProject project, string path)
         {
             log.In(project, path);
 
@@ -371,7 +368,7 @@ namespace FlatEngine
         /// </summary>
         /// <param name="path">Source path</param>
         /// <returns>Project</returns>
-        public FlatProject DeserializeProject(string path)
+        private FlatProject DeserializeProject(string path)
         {
             log.In(path);
 
