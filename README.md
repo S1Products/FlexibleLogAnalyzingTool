@@ -4,7 +4,7 @@
 
 *Convert various log files to unified log format. And it has some useful analyzing functions.*
 
-## Getting Started
+## Features
 
 プロダクトの開発やシステム開発を行っていると、様々な形式のログファイルを解析しなければならない事があります。  
 FlexibleLogAnalyzingTool (FLAT)は、それらサーバやアプリケーションが出力する様々な形式のログファイルを解析し、統一のログ形式に変換します。
@@ -13,13 +13,25 @@ FlexibleLogAnalyzingTool (FLAT)は、それらサーバやアプリケーショ�
 当ツールの大きな特徴として、ログの抽出結果や検索結果を保存し、次回ツールを開いた際に以前開いた状態から復元することが可能になっています。
 これにより、「前にログを解析した時のキーワードが分からない・・・」「他の人が解析した結果と違う・・・」といった事を防ぐ事が可能です。
 
-### Prerequisites
+## Getting Started
 
-当アプリケーションはWindows上で動作することを前提に作成されています。  
-また、アプリケーションの実行には[.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)以上が必須です。
+This section will guide prerequisites, installing and usage.
+
+### Requirements
+
+This application is developed on Windows environment. And it needs [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) later.
 
 ### Installing
 
+Unpack the product zip file to your arbitary directory. And run "FlexibleLogAnalyzingTool.exe" file.
+
+** Note **  
+This application creates several setting files and directorys to application running directory.  
+If you deploy this application to "Program Files" or "Program Files (x86)" directory then please add "full control" privilege to file system security.
+
+### Usage
+
+Please see [Usage page](../../wiki/usage.ja).
 
 ## Built With
 
