@@ -10,6 +10,9 @@ using System.IO;
 using FlatEngine.Tests;
 using FlatEngine.TestData.Tests;
 
+using NPOI.SS.UserModel;
+using NPOI.XSSF.UserModel;
+
 namespace FlatEngine.Export.Tests
 {
     [TestClass()]
@@ -39,6 +42,48 @@ namespace FlatEngine.Export.Tests
         public void TestCleanup()
         {
             TestUtil.DeleteDir(tempTestDir);
+        }
+
+        #endregion
+
+        #region "Custom assertion"
+
+        private void AssertSameExcel(string expectedFile, string actualFile)
+        {
+            string expFullPath = Path.GetFullPath(expectedFile);
+            string actFullPath = Path.GetFullPath(actualFile);
+
+            XSSFWorkbook expWorkbook = null;
+            XSSFWorkbook actWorkbook = null;
+
+            try
+            {
+                expWorkbook = new XSSFWorkbook(expFullPath);
+                actWorkbook = new XSSFWorkbook(actFullPath);
+
+                Assert.AreEqual(expWorkbook.NumberOfSheets, actWorkbook.NumberOfSheets);
+
+                for (int i = 0; i < expWorkbook.NumberOfSheets; i++)
+                {
+                    ISheet expSheet = expWorkbook.GetSheetAt(i);
+                    ISheet actSheet = actWorkbook.GetSheetAt(i);
+
+                    Assert.AreEqual(expSheet.SheetName, actSheet.SheetName);
+                    Assert.AreEqual(expSheet.LastRowNum, actSheet.LastRowNum);
+                }
+            }
+            finally
+            {
+                if (expWorkbook != null)
+                {
+                    expWorkbook.Close();
+                }
+
+                if (actWorkbook != null)
+                {
+                    actWorkbook.Close();
+                }
+            }
         }
 
         #endregion
@@ -95,10 +140,128 @@ namespace FlatEngine.Export.Tests
 
         #endregion
 
+        #region "Export"
+
+        #region "Normal patterns"
+
         [TestMethod()]
-        public void ExportTest()
+        public void ExportTest_Norm_1()
         {
-            Assert.Fail();
+            string fileName = tempTestDir + @"\Dummy.xlsx";
+
+            using (ProjectAccessor accessor = new ProjectAccessor())
+            {
+                FlatProject project = accessor.OpenProject(TestDataConstants.TEST_DATA_PATH_01);
+
+                ParsedLog log = accessor.GetLogReader().ReadLines(project, 0, int.MaxValue);
+
+                using (ExcelLogExporter target = new ExcelLogExporter(fileName))
+                {
+                    target.Export(project, log);
+                }
+
+                Assert.IsTrue(File.Exists(fileName));
+                AssertSameExcel(TestDataConstants.EXCEL_DATA_PATH_01, fileName);
+            }
         }
+
+        [TestMethod()]
+        public void ExportTest_Norm_2()
+        {
+            string fileName = tempTestDir + @"\Dummy.xlsx";
+
+            using (ProjectAccessor accessor = new ProjectAccessor())
+            {
+                FlatProject project = accessor.OpenProject(TestDataConstants.TEST_DATA_PATH_01);
+
+                ParsedLog log = new ParsedLog();
+
+                using (ExcelLogExporter target = new ExcelLogExporter(fileName))
+                {
+                    target.Export(project, log);
+                }
+
+                Assert.IsTrue(File.Exists(fileName));
+                AssertSameExcel(TestDataConstants.EXCEL_DATA_PATH_02, fileName);
+            }
+        }
+
+        #endregion
+
+        #region "Abnormal patterns"
+
+        [TestMethod()]
+        public void ExportTest_Abnorm_1()
+        {
+            string fileName = tempTestDir + @"\Dummy.xlsx";
+
+            using (ProjectAccessor accessor = new ProjectAccessor())
+            {
+                FlatProject project = accessor.OpenProject(TestDataConstants.TEST_DATA_PATH_01);
+
+                ParsedLog log = accessor.GetLogReader().ReadLines(project, 0, int.MaxValue);
+
+                try
+                {
+                    using (ExcelLogExporter target = new ExcelLogExporter(fileName))
+                    {
+                        target.Export(null, log);
+                        Assert.Fail();
+                    }
+                }
+                catch (ArgumentNullException ex)
+                {
+                    Assert.AreEqual("FlatProject", ex.ParamName);
+                }
+            }
+        }
+
+        [TestMethod()]
+        public void ExportTest_Abnorm_2()
+        {
+            string fileName = tempTestDir + @"\Dummy.xlsx";
+
+            using (ProjectAccessor accessor = new ProjectAccessor())
+            {
+                FlatProject project = accessor.OpenProject(TestDataConstants.TEST_DATA_PATH_01);
+                ParsedLog log = new ParsedLog();
+
+                try
+                {
+                    using (ExcelLogExporter target = new ExcelLogExporter(fileName))
+                    {
+                        target.Export(project, null);
+                        Assert.Fail();
+                    }
+                }
+                catch (ArgumentNullException ex)
+                {
+                    Assert.AreEqual("ParsedLog", ex.ParamName);
+                }
+            }
+        }
+
+        [TestMethod()]
+        public void ExportTest_Abnorm_3()
+        {
+            string fileName = tempTestDir + @"\Dummy.xlsx";
+
+            try
+            {
+                using (ExcelLogExporter target = new ExcelLogExporter(fileName))
+                {
+                    target.Export(null, null);
+                    Assert.Fail();
+                }
+            }
+            catch (ArgumentNullException ex)
+            {
+                Assert.AreEqual("FlatProject", ex.ParamName);
+            }
+        }
+
+        #endregion
+
+        #endregion
     }
 }

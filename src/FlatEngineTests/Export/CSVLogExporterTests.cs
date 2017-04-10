@@ -361,6 +361,25 @@ namespace FlatEngine.Export.Tests
             }
         }
 
+        [TestMethod()]
+        public void ExportTest_Abnorm_3()
+        {
+            string fileName = tempTestDir + @"\Dummy.csv";
+
+            using (CSVLogExporter target = new CSVLogExporter(fileName))
+            {
+                try
+                {
+                    target.Export(null, null);
+                    Assert.Fail();
+                }
+                catch (ArgumentNullException ex)
+                {
+                    Assert.AreEqual("FlatProject", ex.ParamName);
+                }
+            }
+        }
+
         #endregion
 
         #endregion

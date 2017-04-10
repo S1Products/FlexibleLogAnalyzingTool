@@ -13,5 +13,8 @@ namespace FlatEngine.TestData.Tests
         public const string CSV_DATA_PATH_01 = @".\TestData\CSVTest01.csv";
         public const string CSV_DATA_PATH_02 = @".\TestData\CSVTest02.csv";
         public const string CSV_DATA_PATH_03 = @".\TestData\CSVTest03.csv";
+
+        public const string EXCEL_DATA_PATH_01 = @".\TestData\ExcelTest01.xlsx";
+        public const string EXCEL_DATA_PATH_02 = @".\TestData\ExcelTest02.xlsx";
     }
 }
