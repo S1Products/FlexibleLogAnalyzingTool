@@ -488,6 +488,11 @@ namespace FlatEngine.Export
 
         private void ResizeLogColumns(FlatProject proj, ColumnDefinitionList colDefList)
         {
+            if (maxCellWidthDictionary.Count == 0)
+            {
+                return;
+            }
+
             int colPos = LG_COL_POS_CONTENT_START;
 
             if (proj.ShowFileName)
